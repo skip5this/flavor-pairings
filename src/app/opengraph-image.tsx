@@ -45,7 +45,7 @@ export default async function Image() {
             height: "100%",
             objectFit: "cover",
             objectPosition: "center",
-            opacity: 0.6,
+            opacity: 0.3,
           }}
         />
         {/* Content overlay */}
@@ -67,7 +67,7 @@ export default async function Image() {
               letterSpacing: "0.15em",
               textTransform: "uppercase",
               margin: 0,
-              textShadow: "0 2px 4px rgba(255, 255, 255, 0.9)",
+              textShadow: "0 1px 2px rgba(255, 255, 255, 0.6)",
             }}
           >
             Flavor Pairings
@@ -75,9 +75,9 @@ export default async function Image() {
           <p
             style={{
               fontSize: "32px",
-              color: "#8a8078",
+              color: "#5a524a",
               margin: 0,
-              textShadow: "0 1px 2px rgba(255, 255, 255, 0.7)",
+              textShadow: "0 1px 1px rgba(255, 255, 255, 0.4)",
             }}
           >
             Discover what ingredients work well together
