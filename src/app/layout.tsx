@@ -22,6 +22,16 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     title: "Flavor Pairings",
   },
+  openGraph: {
+    title: "Flavor Pairings",
+    description: "Discover which ingredients pair well together",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Flavor Pairings",
+    description: "Discover which ingredients pair well together",
+  },
 };
 
 export const viewport: Viewport = {
