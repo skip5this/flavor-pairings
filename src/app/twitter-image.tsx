@@ -10,6 +10,14 @@ export const size = {
 export const contentType = "image/png";
 
 export default async function Image() {
+  // Get the base URL for the image
+  // In production, this should be your actual domain
+  const baseUrl = process.env.VERCEL_URL 
+    ? `https://${process.env.VERCEL_URL}` 
+    : process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  
+  const bgImageUrl = `${baseUrl}/bg-image2.png`;
+
   return new ImageResponse(
     (
       <div
@@ -22,14 +30,33 @@ export default async function Image() {
           alignItems: "center",
           justifyContent: "center",
           fontFamily: "system-ui, sans-serif",
+          position: "relative",
         }}
       >
+        {/* Background image */}
+        <img
+          src={bgImageUrl}
+          alt=""
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center",
+            opacity: 0.6,
+          }}
+        />
+        {/* Content overlay */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             gap: "24px",
+            position: "relative",
+            zIndex: 1,
           }}
         >
           <h1
@@ -40,6 +67,7 @@ export default async function Image() {
               letterSpacing: "0.15em",
               textTransform: "uppercase",
               margin: 0,
+              textShadow: "0 2px 4px rgba(255, 255, 255, 0.9)",
             }}
           >
             Flavor Pairings
@@ -49,62 +77,11 @@ export default async function Image() {
               fontSize: "32px",
               color: "#8a8078",
               margin: 0,
+              textShadow: "0 1px 2px rgba(255, 255, 255, 0.7)",
             }}
           >
             Discover what ingredients work well together
           </p>
-          <div
-            style={{
-              display: "flex",
-              gap: "16px",
-              marginTop: "32px",
-            }}
-          >
-            <div
-              style={{
-                background: "#b5dce0",
-                padding: "16px 32px",
-                borderRadius: "16px",
-                fontSize: "24px",
-                color: "#1a1a1a",
-              }}
-            >
-              Apples
-            </div>
-            <div
-              style={{
-                background: "#c9c0e8",
-                padding: "16px 32px",
-                borderRadius: "16px",
-                fontSize: "24px",
-                color: "#1a1a1a",
-              }}
-            >
-              Cinnamon
-            </div>
-            <div
-              style={{
-                background: "#b5dce0",
-                padding: "16px 32px",
-                borderRadius: "16px",
-                fontSize: "24px",
-                color: "#1a1a1a",
-              }}
-            >
-              Nutmeg
-            </div>
-            <div
-              style={{
-                background: "#c9c0e8",
-                padding: "16px 32px",
-                borderRadius: "16px",
-                fontSize: "24px",
-                color: "#1a1a1a",
-              }}
-            >
-              Butter
-            </div>
-          </div>
         </div>
       </div>
     ),
