@@ -55,16 +55,23 @@ export default function Home() {
           WebkitMaskImage: 'radial-gradient(ellipse 70% 60% at center, black 20%, transparent 70%)',
         }}
       />
-      <div className="relative max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-8 lg:pt-32 lg:pb-12">
+      {/* Top edge fade overlay - mobile and tablet only */}
+      <div
+        className="absolute inset-0 pointer-events-none lg:hidden"
+        style={{
+          background: 'linear-gradient(to bottom, var(--background) 0%, var(--background) 15%, transparent 35%)',
+        }}
+      />
+      <div className="relative max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 pt-12 pb-8 lg:pt-32 lg:pb-12">
         {/* Header */}
         <header className="mb-8 lg:mb-12 text-center">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 font-[family-name:var(--font-display)] uppercase tracking-[0.2em]">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-3 font-[family-name:var(--font-display)] uppercase tracking-[0.2em] drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]">
             Flavor Pairings
           </h1>
-          <p className="text-muted text-lg">
+          <p className="text-muted text-lg drop-shadow-[0_1px_1px_rgba(255,255,255,0.6)]">
             Discover what ingredients work well together
           </p>
-          <p className="text-sm text-muted/70 mt-1">
+          <p className="text-sm text-muted/70 mt-1 drop-shadow-[0_1px_1px_rgba(255,255,255,0.5)]">
             {getIngredientCount()} ingredients
           </p>
         </header>
