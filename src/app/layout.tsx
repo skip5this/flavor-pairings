@@ -26,11 +26,14 @@ export const metadata: Metadata = {
     title: "Flavor Pairings",
     description: "Discover which ingredients pair well together",
     type: "website",
+    url: "https://flavor-pairings.vercel.app",
+    siteName: "Flavor Pairings",
   },
   twitter: {
     card: "summary_large_image",
     title: "Flavor Pairings",
     description: "Discover which ingredients pair well together",
+    site: "@skip5this",
   },
 };
 
