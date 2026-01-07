@@ -46,8 +46,16 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-8 lg:pt-32 lg:pb-12">
+    <div className="min-h-screen bg-background relative">
+      {/* Background image with fade */}
+      <div
+        className="absolute inset-0 bg-[url('/bg-image2.png')] bg-no-repeat bg-center bg-contain opacity-60 pointer-events-none"
+        style={{
+          maskImage: 'radial-gradient(ellipse 70% 60% at center, black 20%, transparent 70%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 70% 60% at center, black 20%, transparent 70%)',
+        }}
+      />
+      <div className="relative max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-8 lg:pt-32 lg:pb-12">
         {/* Header */}
         <header className="mb-8 lg:mb-12 text-center">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-3 font-[family-name:var(--font-display)] uppercase tracking-[0.2em]">
