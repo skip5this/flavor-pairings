@@ -499,6 +499,11 @@ const excludeIngredients = new Set([
   "pilaf", "dumplings", "spring rolls", "blintzes",
   "gravy", "jus", "reduction", "glaze",
   "croutons", "crumbs", "stuffing",
+  // More specific items to exclude
+  "cherry pie", "ladyfingers", "mexican beverages",
+  "mushroom stock", "sous-vide cooking", "sous vide cooking",
+  "summer savory", "ripe ingredients", "rare", "roasts",
+  "pear beefeater", "orange flower water", "orange-flower water",
 ]);
 
 function shouldExclude(name: string): boolean {
@@ -511,6 +516,7 @@ function shouldExclude(name: string): boolean {
     "dessert", "pastry", "bread", "cake", "cookie", "pie",
     " oils", " nuts", " spices", " herbs", " greens", " cheeses",
     " berries", " poultry", " meats", " roasted",
+    "compote", "beverage", " fruits",
   ];
 
   if (excludePatterns.some(p => lower.includes(p))) {
