@@ -280,6 +280,8 @@ function mapToParentCategory(name: string): string {
     "apricot tea": "tea",
     "lemon tea": "tea",
     "peach tea": "tea",
+    // Gin
+    "gin flavors": "gin",
   };
 
   if (directMappings[lower]) {
