@@ -536,6 +536,8 @@ const excludeIngredients = new Set([
   "pear beefeater", "orange flower water", "orange-flower water",
   "angel hair noodles", "braised", "eastern mediterranean", "finnan haddie",
   "raw", "sea vegetables", "shad", "sweet vegetables",
+  "vegetable", "vegetable puree", "vegetable stock", "vegetarian meals",
+  "water",
 ]);
 
 function shouldExclude(name: string): boolean {
