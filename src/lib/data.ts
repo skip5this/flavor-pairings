@@ -486,7 +486,7 @@ const excludeIngredients = new Set([
   // Seed oils
   "canola oil", "vegetable oil", "sunflower oil", "safflower oil",
   "corn oil", "soybean oil", "grapeseed oil", "cottonseed oil",
-  "rapeseed oil",
+  "rapeseed oil", "sunflower seed oil",
   // Spice categories (not single spices)
   "spice blends", "spice mixes", "warm spices", "sweet spices",
   "pickling spices", "baking spices", "indian spices", "asian spices",
