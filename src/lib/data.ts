@@ -10,6 +10,11 @@ function normalizeIngredientName(name: string): string {
   // Remove parenthetical descriptions: "mahon (aged spanish cheese)" → "mahon"
   trimmed = trimmed.replace(/\s*\([^)]*\)/g, "").trim();
 
+  // Remove orphaned parentheses and malformed entries
+  trimmed = trimmed.replace(/\s*\([^)]*$/g, "").trim(); // unclosed "("
+  trimmed = trimmed.replace(/^[^(]*\)\s*/g, "").trim(); // orphaned ")" at start
+  trimmed = trimmed.replace(/\)\s*$/g, "").trim(); // orphaned ")" at end
+
   // Handle slashes - take first option: "coffee / espresso" → "coffee"
   if (trimmed.includes("/")) {
     trimmed = trimmed.split("/")[0].trim();
@@ -186,6 +191,62 @@ function mapToParentCategory(name: string): string {
     "mole sauce": "mole",
     "mole sauces": "mole",
     "mole negro": "mole",
+    // Red wine variants → red wine
+    "dry brandy": "brandy",
+    "dry red wine": "red wine",
+    "dry red": "red wine",
+    "pinot noir wine": "red wine",
+    "pinot noir) wine": "red wine",
+    "syrah) wine": "red wine",
+    "madeira red wine": "red wine",
+    "fruity wine": "red wine",
+    "red wine sauces": "red wine",
+    // White wine variants → white wine
+    "dry white wine": "white wine",
+    "dry white wines": "white wine",
+    "dry to off-dry white wine": "white wine",
+    "chardonnay wine": "white wine",
+    "pinot blanc wine": "white wine",
+    "riesling wine": "white wine",
+    "sauternes wine": "white wine",
+    "sweet white wine": "white wine",
+    "or white wine": "white wine",
+    // Other wine/spirit consolidation
+    "dry sherry": "sherry",
+    "dry sherry wine": "sherry",
+    "sherry wine": "sherry",
+    "sweet sherry wine": "sherry",
+    "dry vermouth": "vermouth",
+    "vermouth wine": "vermouth",
+    "dry wine": "wine",
+    "sweet wine": "wine",
+    "sweet wines": "wine",
+    "champagne wine": "champagne",
+    "madeira wine": "madeira",
+    "marsala wine": "marsala",
+    "port wine": "port",
+    "rosé wine": "rosé",
+    "sparkling wine": "champagne",
+    "vin santo wine": "vin santo",
+    "ice wine wine": "ice wine",
+    "reduced-wine sauces": "wine",
+    // Egg variants → eggs
+    "egg": "eggs",
+    "chicken eggs": "eggs",
+    "custard eggs": "eggs",
+    "egg dishes": "eggs",
+    "egg salad": "eggs",
+    "egg whites": "eggs",
+    "egg yolks": "eggs",
+    "egg-based dishes eggs": "eggs",
+    "hard-boiled egg": "eggs",
+    "omelets eggs": "eggs",
+    "quail eggs": "eggs",
+    "scrambled eggs": "eggs",
+    "yolk eggs": "eggs",
+    "yolks egg": "eggs",
+    "yolks eggs": "eggs",
+    "frittata eggs": "eggs",
     // Tea variants → tea
     "black tea": "tea",
     "green tea": "tea",
@@ -318,6 +379,63 @@ const excludeIngredients = new Set([
   "meat stocks",
   "meat-based sauces",
   "meat-based stocks",
+  // Dishes and preparations (not single ingredients)
+  "stew", "stews", "stewed dishes",
+  "risotto", "risottos",
+  "desserts", "dessert",
+  "beverages", "beverage",
+  "breakfast", "lunch", "dinner",
+  "sandwiches", "sandwich",
+  "pasta", "pastas",
+  "noodles", "noodle",
+  "puddings", "pudding", "rice pudding",
+  "custard", "custards",
+  "pies", "pie",
+  "cakes", "cake",
+  "cookies", "cookie",
+  "tarts", "tart",
+  "pastries", "pastry", "pastry crust",
+  "breads", "bread",
+  "pancakes", "pancake",
+  "baked goods",
+  "braised dishes", "grilled dishes", "stir-fried dishes",
+  "brined dishes", "vegetarian dishes",
+  "fruit salads", "green salads", "potato salads",
+  "tea sandwiches",
+  // Sauces and preparations as categories
+  "cream sauces", "white sauces", "mexican sauces",
+  "brown butter sauce", "brown butter sauces",
+  "béarnaise sauces", "béchamel sauce", "béchamel sauces",
+  "mornay sauces", "romesco sauce", "romesco sauces",
+  "salsa", "salsas", "fruit salsas",
+  "marinades", "marinade",
+  "dressings", "salad dressings",
+  "vinaigrette", "vinaigrettes", "mustard vinaigrette",
+  "clam stocks", "mushroom stocks",
+  "shrimp stocks", "turkey stocks", "veal stock", "veal stocks", "vegetable stocks",
+  "mirepoix",
+  "aioli", "mayonnaise", "pesto",
+  "chutney", "chutneys",
+  "jams", "jam",
+  "sorbet", "sorbets",
+  "ice cream", "vanilla ice cream",
+  "meringue", "meringues",
+  "soufflés", "soufflé",
+  "stuffing", "stuffings",
+  "savory",
+  "stock", "stocks",
+  "strongly flavoured foods", "strongly flavored foods",
+  "bold flavoured foods", "bold flavored foods",
+  "delicate flavoured foods", "delicate flavored foods",
+  // Vegetable categories (not single ingredients)
+  "root vegetables", "leafy vegetables", "green vegetables",
+  "cruciferous vegetables", "bitter greens", "salad greens",
+  "winter vegetables", "summer vegetables", "spring vegetables",
+  "cooked vegetables", "raw vegetables", "grilled vegetables",
+  "roasted vegetables", "steamed vegetables",
+  // Other non-specific terms
+  "warming",
+  "winter savory",
 ]);
 
 function shouldExclude(name: string): boolean {
@@ -384,6 +502,44 @@ function processData(): Ingredient[] {
       ingredient: nameMap.get(key)!,
       pairings: [...pairingsSet],
     });
+  }
+
+  // Third pass: Create reverse pairings for grey items that appear in 3+ ingredient lists
+  // This turns common pairings into searchable ingredients
+  const primarySet = new Set(result.map(r => r.ingredient.toLowerCase()));
+  const reverseLookup = new Map<string, Set<string>>();
+
+  // Build reverse lookup: for each pairing, which ingredients list it?
+  for (const item of result) {
+    for (const pairing of item.pairings) {
+      const pairingLower = pairing.toLowerCase();
+      if (!reverseLookup.has(pairingLower)) {
+        reverseLookup.set(pairingLower, new Set());
+      }
+      reverseLookup.get(pairingLower)!.add(item.ingredient);
+    }
+  }
+
+  // Create new ingredients from grey items with 3+ appearances
+  for (const [pairingLower, ingredients] of reverseLookup) {
+    if (!primarySet.has(pairingLower) && ingredients.size >= 3 && !shouldExclude(pairingLower)) {
+      // Find the best casing for this pairing
+      let displayName = pairingLower;
+      for (const item of result) {
+        const found = item.pairings.find(p => p.toLowerCase() === pairingLower);
+        if (found) {
+          displayName = found;
+          break;
+        }
+      }
+
+      // Add as new ingredient with reverse pairings
+      result.push({
+        ingredient: displayName,
+        pairings: [...ingredients],
+      });
+      primarySet.add(pairingLower);
+    }
   }
 
   return result;
