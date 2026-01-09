@@ -539,6 +539,7 @@ const excludeIngredients = new Set([
   "vegetable", "vegetable puree", "vegetable stock", "vegetarian meals",
   "water",
   "graham crackers", "graham cracker crumbs",
+  "fruit crisp", "fruit juice",
 ]);
 
 function shouldExclude(name: string): boolean {
