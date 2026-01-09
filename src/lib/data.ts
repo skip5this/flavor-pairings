@@ -467,6 +467,10 @@ const excludeIngredients = new Set([
   "baking", "steaming", "poaching", "blanching", "searing",
   "broiling", "smoking", "curing", "pickling", "fermenting",
   "marinating", "brining", "caramelizing", "reducing",
+  // More baked goods and multi-ingredient items
+  "shortbread", "shortbread baked goods", "shortcake",
+  "biscuits", "scones", "muffins", "croissants", "brioche",
+  "smoked",
 ]);
 
 function shouldExclude(name: string): boolean {
