@@ -478,7 +478,8 @@ function shouldExclude(name: string): boolean {
   return (
     excludeIngredients.has(lower) ||
     lower.length < 2 ||
-    lower.includes(" or ") // Exclude "X or Y" type entries
+    lower.includes(" or ") || // Exclude "X or Y" type entries
+    lower.includes("sauce") // Exclude any sauce items
   );
 }
 
