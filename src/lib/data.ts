@@ -297,6 +297,19 @@ function mapToParentCategory(name: string): string {
     "half-and-half": "heavy cream",
     "light cream": "heavy cream",
     "whipping cream": "heavy cream",
+    // Ham variants -> pork
+    "ham": "pork",
+    "ham hocks": "pork",
+    "ham hock": "pork",
+    "hock ham": "pork",
+    "hocks ham": "pork",
+    "baked ham": "pork",
+    "cured ham": "pork",
+    "smoked ham": "pork",
+    "country ham": "pork",
+    "prosciutto": "pork",
+    "serrano ham": "pork",
+    "iberico ham": "pork",
   };
 
   if (directMappings[lower]) {
@@ -522,6 +535,7 @@ const excludeIngredients = new Set([
   "summer savory", "ripe ingredients", "rare", "roasts",
   "pear beefeater", "orange flower water", "orange-flower water",
   "angel hair noodles", "braised", "eastern mediterranean", "finnan haddie",
+  "raw",
 ]);
 
 function shouldExclude(name: string): boolean {
