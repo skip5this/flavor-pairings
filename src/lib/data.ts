@@ -453,6 +453,20 @@ const excludeIngredients = new Set([
   // Other non-specific terms
   "warming",
   "winter savory",
+  // Seed oils
+  "canola oil", "vegetable oil", "sunflower oil", "safflower oil",
+  "corn oil", "soybean oil", "grapeseed oil", "cottonseed oil",
+  "rapeseed oil",
+  // Spice categories (not single spices)
+  "spice blends", "spice mixes", "warm spices", "sweet spices",
+  "pickling spices", "baking spices", "indian spices", "asian spices",
+  "middle eastern spices", "african spices", "cajun spices",
+  // Cooking methods
+  "braising", "grilling", "roasting", "sautéing", "sauteing",
+  "frying", "deep frying", "pan frying", "stir frying",
+  "baking", "steaming", "poaching", "blanching", "searing",
+  "broiling", "smoking", "curing", "pickling", "fermenting",
+  "marinating", "brining", "caramelizing", "reducing",
 ]);
 
 function shouldExclude(name: string): boolean {
