@@ -515,7 +515,7 @@ const excludeIngredients = new Set([
   "mushroom stock", "sous-vide cooking", "sous vide cooking",
   "summer savory", "ripe ingredients", "rare", "roasts",
   "pear beefeater", "orange flower water", "orange-flower water",
-  "angel hair noodles", "braised", "eastern mediterranean",
+  "angel hair noodles", "braised", "eastern mediterranean", "finnan haddie",
 ]);
 
 function shouldExclude(name: string): boolean {
