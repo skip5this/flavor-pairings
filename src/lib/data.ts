@@ -291,6 +291,12 @@ function mapToParentCategory(name: string): string {
     "white peppercorns": "white pepper",
     "green peppercorns": "green pepper",
     "peppercorns": "black pepper",
+    // Cream
+    "half-and-half cream": "heavy cream",
+    "half and half cream": "heavy cream",
+    "half-and-half": "heavy cream",
+    "light cream": "heavy cream",
+    "whipping cream": "heavy cream",
   };
 
   if (directMappings[lower]) {
