@@ -471,15 +471,56 @@ const excludeIngredients = new Set([
   "shortbread", "shortbread baked goods", "shortcake",
   "biscuits", "scones", "muffins", "croissants", "brioche",
   "smoked",
+  // Specific dishes and prepared foods
+  "borscht", "biryani", "cassoulet", "gumbo", "gumbos",
+  "enchiladas", "falafel", "fondue", "fondues", "gazpacho",
+  "kebabs", "osso buco", "tagines", "chili con carne",
+  "paella", "risotto", "ratatouille", "goulash", "paprikash",
+  "brandade", "caponata", "carpaccio", "gravlax", "lox",
+  "ceviche", "sashimi", "tempura", "teriyaki", "sukiyaki",
+  "confit", "ragu", "bolognese", "carbonara", "alfredo",
+  "primavera", "puttanesca", "amatriciana", "arrabbiata",
+  "bouillabaisse", "cioppino", "jambalaya", "etouffee",
+  "choucroute", "coq au vin", "beef bourguignon",
+  "thanksgiving", "christmas", "holiday",
+  // Beverages and drinks
+  "margaritas", "bloody marys", "smoothies", "eggnog",
+  "lemonade", "punch", "cocktails",
+  // Other non-ingredients
+  "cooking", "finishing", "seasoning", "astringency",
+  "caffeine", "richness", "freshness", "tartness",
+  // More specific dishes and prepared items
+  "aligot", "beurre blanc", "blini", "chiles rellenos",
+  "mousse", "consommé", "coleslaw", "rub", "brines",
+  "compote", "compotes", "crisp", "crisps", "cobbler", "cobblers",
+  "chutney", "chutneys", "relish", "relishes",
+  "biscotti", "biscuit", "candy", "marshmallow", "marshmallows",
+  "toffee", "caramel", "fudge", "nougat",
+  "pilaf", "dumplings", "spring rolls", "blintzes",
+  "gravy", "jus", "reduction", "glaze",
+  "croutons", "crumbs", "stuffing",
 ]);
 
 function shouldExclude(name: string): boolean {
   const lower = name.toLowerCase();
+
+  // Pattern-based exclusions for multi-ingredient items
+  const excludePatterns = [
+    "sauce", "salad", "baked goods", "dishes", "foods", "soups",
+    "stew", "stocks", "chowder", "casserole", "liqueur", "cocktail",
+    "dessert", "pastry", "bread", "cake", "cookie", "pie",
+    " oils", " nuts", " spices", " herbs", " greens", " cheeses",
+    " berries", " poultry", " meats", " roasted",
+  ];
+
+  if (excludePatterns.some(p => lower.includes(p))) {
+    return true;
+  }
+
   return (
     excludeIngredients.has(lower) ||
     lower.length < 2 ||
-    lower.includes(" or ") || // Exclude "X or Y" type entries
-    lower.includes("sauce") // Exclude any sauce items
+    lower.includes(" or ") // Exclude "X or Y" type entries
   );
 }
 
