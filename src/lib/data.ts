@@ -286,6 +286,11 @@ function mapToParentCategory(name: string): string {
     "anchovy": "anchovies",
     "anchovy paste": "anchovies",
     "white anchovies": "anchovies",
+    // Pepper
+    "black peppercorns": "black pepper",
+    "white peppercorns": "white pepper",
+    "green peppercorns": "green pepper",
+    "peppercorns": "black pepper",
   };
 
   if (directMappings[lower]) {
@@ -510,7 +515,7 @@ const excludeIngredients = new Set([
   "mushroom stock", "sous-vide cooking", "sous vide cooking",
   "summer savory", "ripe ingredients", "rare", "roasts",
   "pear beefeater", "orange flower water", "orange-flower water",
-  "angel hair noodles",
+  "angel hair noodles", "braised",
 ]);
 
 function shouldExclude(name: string): boolean {
