@@ -535,7 +535,7 @@ const excludeIngredients = new Set([
   "summer savory", "ripe ingredients", "rare", "roasts",
   "pear beefeater", "orange flower water", "orange-flower water",
   "angel hair noodles", "braised", "eastern mediterranean", "finnan haddie",
-  "raw", "sea vegetables", "shad",
+  "raw", "sea vegetables", "shad", "sweet vegetables",
 ]);
 
 function shouldExclude(name: string): boolean {
