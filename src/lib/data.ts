@@ -541,7 +541,7 @@ const excludeIngredients = new Set([
   "graham crackers", "graham cracker crumbs",
   "fruit crisp", "fruit juice",
   "baking powder", "baking soda",
-  "achiote",
+  "achiote", "anisette",
 ]);
 
 function shouldExclude(name: string): boolean {
