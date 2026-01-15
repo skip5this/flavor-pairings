@@ -645,6 +645,7 @@ function shouldExclude(name: string): boolean {
     " berries", " poultry", " meats", " roasted",
     "compote", "beverage", " fruits",
     "cuisine", "cusine", "-style", "flavors", "flavours",
+    "curry paste",
   ];
 
   if (excludePatterns.some(p => lower.includes(p))) {
