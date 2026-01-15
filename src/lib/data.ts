@@ -623,6 +623,7 @@ const excludeIngredients = new Set([
   "offal", "oil", "panforte", "peking", "phyllo dough",
   "pickled herring", "pistou", "plum paste", "poire william",
   "ponzu", "popcorn", "pot roast", "pretzels", "prosecco", "quinoa",
+  "bouquet garni",
 ]);
 
 function shouldExclude(name: string): boolean {
