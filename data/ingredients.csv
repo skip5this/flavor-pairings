@@ -1,0 +1,902 @@
+entity_id,ingredient_name,synonyms,scientific_name,category
+1,Bakery Products,Bakery Products,Poacceae,Bakery
+2,Bread,Bread,Poacceae,Bakery
+3,Rye Bread,Rye Bread,Rye,Bakery
+4,Wheaten Bread,"Soda scones, Soda farls",Wheat,Bakery
+5,White Bread,White Bread,Wheat,Bakery
+6,Wholewheat Bread,Wholewheat Bread,Wheat,Bakery
+7,Wort,Wort,Barley,Beverage
+8,Arrack,Arak,Grape,Beverage Alcoholic
+9,Beer,Beer,Poacceae,Beverage Alcoholic
+10,Bantu Beer,"Millet Beer, Malwa, Kaffir Beer, Pombe, Opaque Beer",Eragrostideae,Beverage Alcoholic
+11,Brandy,"Cognac, Armagnac, Pisco, Stravencchio,  Kanyak, Konyak",Vitis Vinifera,Beverage Alcoholic
+12,Anise Brandy,Brandy,Anise,Beverage Alcoholic
+13,Apple Brandy,Anise Brandy,Apple,Beverage Alcoholic
+14,Armagnac Brandy,Armanac Brandy,Vitis Vinifera,Beverage Alcoholic
+15,Blackberry Brandy,Brackberry Brandy,Blackberry,Beverage Alcoholic
+16,Cherry Brandy,Cherry Brandy,Prunus,Beverage Alcoholic
+17,Cognac Brandy,Cognac Brandy,Vitis,Beverage Alcoholic
+18,Papaya Brandy,Papaya Brandy,Papaya,Beverage Alcoholic
+19,Pear Brandy,"Pear Brandy, Palinka, Poire Williams, Rakia, Tuica",Pear,Beverage Alcoholic
+20,Plum Brandy,"Plum Brandy, Slivovitz, Tuica, Ljivovica, Asliwowica, Slivovitza, Schlivowitz, Slivovitsa",Damson,Beverage Alcoholic
+21,Raspberry Brandy,Raspberry Brandy,Rubus Idaeus,Beverage Alcoholic
+22,Weinbrand Brandy,Weinbrand Brandy,Vitis Vinifera,Beverage Alcoholic
+23,Gin,Gin,Juniperus Communis,Beverage Alcoholic
+24,Rum,Rum,Saccharum,Beverage Alcoholic
+25,Whisky,Whisky,Maize,Beverage Alcoholic
+26,Bourbon Whisky,Bourbon Whisky,Corn,Beverage Alcoholic
+27,Canadian Whisky,Canadian Whisky,Corn,Beverage Alcoholic
+28,Finnish Whisky,Finnish Whisky,Maize,Beverage Alcoholic
+29,Japanese Whisky,Japanese Whisky,Maize,Beverage Alcoholic
+30,Malt Whisky,Malt Whisky,Maize,Beverage Alcoholic
+31,Scotch Whisky,Scotch,Maize,Beverage Alcoholic
+32,Wine,Wine,Grape,Beverage Alcoholic
+33,Bilberry Wine,Bilberry Wine,Vaccinium Myrtillus,Beverage Alcoholic
+34,Botrytized Wine,Botrytized Wine,Grape,Beverage Alcoholic
+35,Champagne,Champagne,Grape,Beverage Alcoholic
+36,Cider,Cider,Apple,Beverage Alcoholic
+37,Plum Wine,Plum Wine,Plum,Beverage Alcoholic
+38,Port Wine,Vinho do Porto,Vitis Vinifera,Beverage Alcoholic
+39,Red Wine,Red Wine,Grape,Beverage Alcoholic
+40,Rose Wine,"Rosada, Rosato",Grape,Beverage Alcoholic
+41,Sake,Sake,Oryza Sativa,Beverage Alcoholic
+42,Sherry,Sherry,Grape,Beverage Alcoholic
+43,Sparkling Wine,Sparkling Wine,Grape,Beverage Alcoholic
+44,Strawberry Wine,Strawberry Wine,Strawberry,Beverage Alcoholic
+45,White Wine,White Wine,Grape,Beverage Alcoholic
+46,Coffee,Coffee,Coffea,Beverage Caffeinated
+47,Mate,"Yerba, Yerba mate",Yerba Mate,Beverage Caffeinated
+48,Black Tea,Black Tea,Camellia Sinensis,Beverage Caffeinated
+49,Green Tea,Green Tea,Camellia Sinensis,Beverage Caffeinated
+50,Roibos Tea,Bush tea,Aspalathus,Beverage Caffeinated
+51,Barley,Barley,Hordeum,Cereal
+52,Crispbread,"Crispbread, Cracker",Rye,Cereal
+53,Malt,Malt,Poacceae,Cereal
+54,Oats,Oats,Avena,Cereal
+55,Rice,Rice,Oryza Sativa,Cereal
+56,Corn,Corn,Zea,Maize
+57,Corn Oil,Maize Oil,Maize,Maize
+58,Popcorn,Popcorn,Maize,Maize
+59,Sweetcorn,"Sugar Corn, Pole Corn",Maize,Maize
+60,Butter,"Butter, Ghee",Cattle,Dairy
+61,Buttermilk,Buttermilk,Cattle,Dairy
+62,Cheese,Cheese,Cattle,Dairy
+63,Blue Cheese,Blue Cheese,Penicillium,Dairy
+64,Camembert Cheese,Camembert Cheese,Cattle,Dairy
+65,Cheddar Cheese,Cheddar Cheese,Cattle,Dairy
+66,Comte Cheese,Comte Cheese,Cattle,Dairy
+67,Cottage Cheese,Cottage Cheese,Cattle,Dairy
+68,Cream Cheese,Cream Cheese,Cattle,Dairy
+69,Domiati Cheese,"Domiati Cheese, White Cheese",Water Buffalo,Dairy
+70,Emmental Cheese,"Emmentaler, Emmenthal",Cattle,Dairy
+71,Feta Cheese,Feta Cheese,Sheep,Dairy
+72,Goat Cheese,Goat Cheese,Goat,Dairy
+73,Gruyere Cheese,Gruyere Cheese,Cattle,Dairy
+74,Limburger Cheese,Limburger Cheese,Cattle,Dairy
+75,Mozzarella Cheese,Mozzarella Cheese,Italian Buffalo,Dairy
+76,Munster Cheese,Menschterkaas,Cattle,Dairy
+77,Other Cheeses,Other Cheeses,Cattle,Dairy
+78,Parmesan Cheese,"Parmigiano-Reggiano, Parmesan Cheese",Cattle,Dairy
+79,Provolone Cheese,Provolone Cheese,Cattle,Dairy
+80,Romano Cheese,Romano Cheese,Cattle,Dairy
+81,Roquefort Cheese,Roquefort Cheese,Sheep,Dairy
+82,Russian Cheese,Russian Cheese,Cattle,Dairy
+83,Sheep Cheese,Sheep Cheese,Sheep,Dairy
+84,Swiss Cheese,Swiss Cheese,Cattle,Dairy
+85,Tilsit Cheese,Tilsit Cheese,Cattle,Dairy
+86,Dairy Products,Dairy Products,Water Buffalo,Dairy
+87,Ghee,Ghee,Cattle,Dairy
+88,Milk,Milk,Cattle,Dairy
+89,Milk Fat,Milk Fat,Cattle,Dairy
+90,Goat Milk,Goat Milk,Goat,Dairy
+91,Milk Powder,Milk Powder,Cattle,Dairy
+92,Sheep Milk,Sheep Milk,Sheep,Dairy
+93,Skimmed Milk,Skimmed Milk,Cattle,Dairy
+94,Yogurt,Curd,Cattle,Dairy
+95,Achilleas,"Achillea, Yarrow, Allheal, Bloodwort",Achillea,Essential Oil
+96,Arar,Phoenicean juniper,Juniperus Phoenicea,Essential Oil
+97,Buchu,"Boegoe,  Bucco, Bookoo, Diosma",Agathosma,Essential Oil
+98,Cajeput,Cajeput,Melaleuca,Essential Oil
+99,Camphor,Camphor,Cinnamomum,Essential Oil
+100,Cascarilla,Cascarilla,Croton,Essential Oil
+101,Cedar,Cedar,Cedrus,Essential Oil
+102,Chamomile,"Camomile, Roman Chamomile, English Chamomile, Garden Chamomile, Ground Apple",Chamaemelum,Essential Oil
+103,Citronella,Citronella,Cymbopogon,Essential Oil
+104,Citrus Peel Oil,Citrus Peel Oil,Citrus,Essential Oil
+105,Eucalyptus,Eucalyptus,Eucalyptus,Essential Oil
+106,Fir,Fir,Abies,Essential Oil
+107,Geranium,Cranesbills,Geranium,Essential Oil
+108,Grapefruit Peel Oil,Grapefruit Peel Oil,Citrus,Essential Oil
+109,Grass,"Bluestem Grass,Â Broomsedge",Andropogon,Essential Oil
+110,Hops Oil,Hops Oil,Humulus Lupulus,Essential Oil
+111,Hyacinth,"Common Hyacinth, Garden Hyacinth, Dutch Hyacinth",Hyacinthus Orientalis,Essential Oil
+112,Hyssop Oil,Hyssop Oil,Hyssopus Officinalis,Essential Oil
+113,Lemon Grass,"Barbed wire grass, Silky heads, Citronella grass, Fever grass",Cymbopogon Citratus,Essential Oil
+114,Lemon Peel Oil,Lemon Peel Oil,Citrus,Essential Oil
+115,Lime Peel Oil,Lime Peel Oil,Citrus Ã— Aurantiifolia,Essential Oil
+116,Lovage,Lovage,Levisticum Officinale,Essential Oil
+117,Mandarin Orange Peel Oil,Mandarin Orange Peel Oil,Citrus,Essential Oil
+118,Mastic Gum,"Arabic gum, Yemen gum, Tears of chios",Pistacia Lentiscus,Essential Oil
+119,Mentha Oil,Mentha Oil,Mentha Spicata L.,Essential Oil
+120,Myrrh,Myrrh,Commiphora,Essential Oil
+121,Neroli Oil,Neroli Oil,Bitter Orange,Essential Oil
+122,Orange Oil,"Seville orange, Sour orange, Bigarade orange, Marmalade orange",Citrus,Essential Oil
+123,Orris,Orris,Iris Germanica,Essential Oil
+124,Clary Sage,Clary,Salvia,Essential Oil
+125,Red Sage,"Big-sage, Wild-sage, Red-sage",Lantana,Essential Oil
+126,Spanish Sage,Spanish Sage,Salvia,Essential Oil
+127,Sandalwood,Sandalwood,Santalum,Essential Oil
+128,Sea Buckthorns,"Sandthorn, Sallowthorn, Seaberry",Hippophae Rhamnoides,Berry
+129,Sweet Grass,"Manna grass, Mary's grass, Vanilla grass, Holy grass, Bison grass",Hierochloe Odorata,Essential Oil
+130,Valerian,"Garden valerian, Garden heliotrope, Setwall, All-heal",Valeriana officinalis,Essential Oil
+131,Wattle,"Sweet acacia, Farnese wattle, Dead finish, Mimosa wattle, Mimosa bush, Prickly mimosa bush, Prickly Moses, Needle bush, Sponge wattle, Thorny acacia, Thorny feather wattle, Wild briar, Huisache, Cassie, Cascalotte, Cassic",Vachellia,Essential Oil
+132,Yarrow,"Plumajillo gordaldo, Nosebleed plant, Old man's pepper, Devil's nettle, Sanguinary, Milfoil, Soldier's woundwort, Thousand-leaf, Thousand-seal",Achillea,Essential Oil
+133,Ylang-Ylang,Ylang-Ylang,Cananga,Essential Oil
+134,Clam,Clam,Mollusca,Seafood
+135,Crab,Crab,Crustacean,Seafood
+136,Crayfish,Crawfish,Crustacean,Seafood
+137,Kelp,Kelp,Kelp,Seafood
+138,Krill,Krill,Crustacean,Seafood
+139,Lobster,"Lobster, Clawed lobster",Crustacean,Seafood
+140,Mollusc,Mollusc,Mollusca,Seafood
+141,Oyster,Oyster,Mollusca,Seafood
+142,Prawn,Prawn,Crustacean,Seafood
+143,Scallop,Scallop,Mollusca,Seafood
+144,Shellfish,Shellfish,Mollusca,Seafood
+145,Shrimp,Shrimp,Crustacean,Seafood
+146,Trassi,Trassi,Crustacean,Seafood
+147,Squid,Squid,Cephalopod,Seafood
+148,Bonito,"Katsuobushi, Bonito Flakes, Okaka",Skipjack Tuna,Fish
+149,Caviar,Caviar,Fish,Fish
+150,Codfish,Codfish,Gadus,Fish
+151,Fish,Fish,Fish,Fish
+152,Fatty Fish,Fatty Fish,Fish,Fish
+153,Lean Fish,Lean Fish,Fish,Fish
+154,Fish Oil,Fish Oil,Fish,Fish
+155,Smoked Fish,Smoked Fish,Fish,Fish
+156,Salmon,Salmon,Ray Finned Fish,Fish
+157,Artichoke,Globe Artichoke,Cynara,Flower
+158,Champaca,Champak,Magnolia,Flower
+159,Jasmine,Jasmine,Jasminum Officinale,Flower
+160,Lavendar,Lavendar,Lavandula Angustifolia,Flower
+161,Rose,Rose,Rosa,Flower
+162,Apple,Apple,Malus,Fruit
+163,Apple Sauce,Apple Sauce,Malus,Fruit
+164,Apricot,"Armenia,  Zardalu",Prunus,Fruit
+165,Avocado,"Avocado pear, Alligator pear",Persea,Fruit
+166,Babaco,Babaco,Vasconcellea,Fruit
+167,Banana,Banana,Musa,Fruit
+168,Beli,"Bael, Bengal Quince, Golden Apple, Japanese Bitter Orange, Wood Apple",Aegle Marmelos,Fruit
+169,Byrsonima crassifolia,"Changunga, Nanche, Serrette, Savanna Serret, Golden Spoon",Byrsonima,Fruit
+170,Cashew Apple,Cashew Apple,Anacardium,Fruit
+171,Cherimoya,Custard Apple,Annona,Fruit
+172,Coconut,Coconut,Cocos Nucifera,Fruit
+173,Currant,Currant,Ribes,Fruit
+174,Black Currant,Black Currant,Ribes,Fruit
+175,Red Currant,Red Currant,Ribes,Fruit
+176,White Currant,White Currant,Ribes,Fruit
+177,Dates,Date Palm,Date Palm,Fruit
+178,Durian,Durian,Durio,Fruit
+179,Elderberry,Elder,Sambucus Nigra,Fruit-Berry
+180,Feijoa,"Pineapple Guava, Guavasteen",Acca Sellowiana,Fruit
+181,Fig,Fig,Ficus Carica,Fruit
+182,Grape,Grape,Vitis,Fruit
+183,Guava,Guava,Psidium Guajava,Fruit
+184,Hogplum,"Jobo, Yellow mombin, Spanish plum, Gully plum, Coolie plum, Hug plum, True yellow mombin, Golden apple, Java plum, Ambaralla",Spondias,Fruit
+185,Jackfruit,Jak Fruit,Artocarpus,Fruit
+186,Kiwifruit,"Kiwi, Chinese gooseberry",Actinidia,Fruit
+187,Litchi,"Liechee, Liche, Lizhi, Lichee, Lychee",Litchi,Fruit
+188,Loquat,"Japanese medlar, Pipa, Japanese Plum, Chinese Plum",Eriobotrya,Fruit
+189,Malay Apple,"Malay rose apple, Mountain apple, Rose apple,  Otaheite apple, Pink satin-ash, Pommerac",Syzygium Malaccense,Fruit
+190,Mango,Mango,Mangifera,Fruit
+191,Melon,Melon,Cucurbitaceae,Fruit
+192,Musk Melon,Musk Melon,Cucumis,Fruit
+193,Naranjilla,"Lulo, Little Orange",Solanum,Fruit
+194,Orange,Orange,Citrus,Fruit
+195,Bitter Orange,"Seville orange, Sour orange, Bigarade orange, Marmalade orange",Citrus,Fruit
+196,Papaya,"Papaw, Pawpaw",Carica,Fruit
+197,Mountain Papaya,"Papaya, Mountain pawpaw, Papayuelo, Chamburo",Vasconcellea,Fruit
+198,Passionfruit,Passionfruit,Passiflora,Fruit
+199,Yellow Passionfruit,Yellow Passionfruit,Passiflora,Fruit
+200,Pawpaw,"Papaw, Common pawpaw",Asiminia,Fruit
+201,Peach,Nectarine,Prunus,Fruit
+202,Pear,Pear,Pyrus,Fruit
+203,Bartlett Pear,"Williams pear, Bartlett Pear",Pyrus Communis,Fruit
+204,Prickly Pear,Prickly Pear,Opuntia,Fruit
+205,Pepino,Sweet Cucumber,Solanum,Fruit
+206,Pineapple,Ananas,Ananas,Fruit
+207,Plum,Plum,Prunus,Fruit
+208,Plumcot,"Apriums, Apriplums, Plumcots",Prunus,Fruit
+209,Pumpkin,Pumpkin,Cucurbita Pepo,Fruit
+210,Quince,Quince,Cydonia,Fruit
+211,Chinese Quince,Chinese Quince,Pseudocydonia,Fruit
+212,Raisin,"Dried grape, sultana, Currant",Vitis Vinifera,Fruit
+213,Roseapple,"Java apple, Semarang rose-apple, Wax jambu, Watery rose apple, Water apple, Bell fruit, Jamb, Java rose apple, Malay rose apple, Malay apple, Mountain apple, Rose apple, Otaheite apple, Pink satin-ash, Pommerac",Syzygium,Fruit
+214,Sapodilla,Zapota,Manilkara Zapota,Fruit
+215,Soursop,Soursop,Annona Muricata,Fruit
+216,Spineless Monkey Orange,Muquaqua,Strychnos,Fruit
+217,Starfruit,Carambola,Averrhoa Carambola,Fruit
+218,Tamarind,Tamarind,Tamarind,Fruit
+219,Woodapple,"Bael, Bengal quince, Golden apple, Japanese bitter orange",Aegle Marmelos,Fruit
+220,Berry,Berry,Eudicots,Berry
+221,Bilberry,"Blaeberry, Whortleberry, Winberry, Whinberry, Wimberry, Whimberry",Vaccinium,Berry
+222,Blackberry,Blackberry,Rubus,Berry
+223,Blueberry,Cherry,Vaccinium,Berry
+224,Cherry,Cherry,Prunus,Berry
+225,Bitter Cherry,"Bitter Berry, Virginia Bird Cherry, Western Chokecherry, Black Chokecherry",Prunus,Berry
+226,Sour Cherry,"Sour Cherry, Tart Cherry, Dwarf Cherry",Prunus,Berry
+227,Wild Cherry,"Wild Cherry, Gean",Prunus,Berry
+228,Cloudberry,"Bakeapple, Kotberry, Knoutberry, Averin, Evron",Rubus,Berry
+229,Cranberry,Cranberry,Vaccinium,Berry
+230,Gooseberry,Gooseberry,Ribes,Berry
+231,Lingonberry,"Partridgeberry, Cowberry",Vaccinium,Berry
+232,Loganberry,Loganberry,Rubus Ã— Loganobaccus,Berry
+233,Raspberry,Raspberry,Rubus,Berry
+234,Strawberry,Strawberry,Fragaria,Berry
+235,Strawberry Jam,Strawberry Jam,Fragaria,Berry
+236,Bergamot,Bergamot,Citrus,Fruit Citrus
+237,Citrus Fruits,Citrus Fruits,Citrus,Fruit Citrus
+238,Grapefruit,Grapefruit,Citrus,Fruit Citrus
+239,Kumquat,Cumquat,Citrus,Fruit Citrus
+240,Lemon,Lemon,Citrus,Fruit Citrus
+241,Lime,"West Indian lime, Bartender's Lime, Omani lime, Mexican Lime, Dayap, Bilolo",Citrus Ã— Aurantiifolia,Fruit Citrus
+242,Mandarin Orange,"Mandarin, Mandarine",Citrus,Fruit Citrus
+243,Satsuma Orange,"Unshu mikan, Cold hardy mandarin, Satsuma mandarin, Satsuma orange, Tangerine",Citrus Unshiu,Fruit Citrus
+244,Tangerine,Tangerine,Citrus Tangerina,Fruit Citrus
+245,Vanilla,Vanilla,Vanilla,Fruit Essence
+246,Mushroom,Mushroom,Agaricus Bisporus,Fungus
+247,Truffle,Truffle,Ascomycota,Fungus
+248,Angelica,Garden Angelica,Angelica,Herb
+249,Artemisia,"Mugwort, Wormwood, Sagebrush",Artemisia,Herb
+250,Basil,Great Basil,Ocimum,Herb
+251,Buckwheat,"Common Buckwheat, Japanese Buckwheat, Silverhull Buckwheat",Fagopyrum,Herb
+252,Calamus,Sweet Flag,Acorus,Herb
+253,Chervil,"Garden Chervil, French Parsley",Anthriscus,Herb
+254,Coriander,Coriander,Coriandrum Sativum,Herb
+255,Cornmint,"Field Mint, Wild Mint",Mentha,Herb
+256,Dill,Dill,Apiaceae,Herb
+257,Fennel,Fennel,Foeniculum Vulgare,Herb
+258,Fenugreek,Fenugreek,Trigonella Foenum-Graecum,Herb
+259,Garlic,Garlic,Allium,Herb
+260,Lemon Balm,"Balm, Common balm, Balm mint",Melissa Officinalis,Herb
+261,Liqourice,Licorice,Glycyrrhiza Glabra,Herb
+262,Mint,Mint,Lamiaceae,Herb
+263,Rhubarb,Rhubarb,Rheum,Herb
+264,Rosemary,Anthos,Rosmarinus,Herb
+265,Sage,"Garden sage, Common sage, Culinary sage",Salvia,Herb
+266,Spearmint,"Garden mint, Common mint, Lamb mint, Mackerel mint",Mentha,Herb
+267,Scotch Spearmint,Scotch Spearmint,Scotch Spearmint,Herb
+268,Tarragon,Estragon,Artemisia,Herb
+269,Thyme,Thyme,Thymus,Herb
+270,Beef,Beef,Cattle,Meat
+271,Beef Processed,Processed Beef,Cattle,Meat
+272,Chicken,Chicken,Fowl,Meat
+273,Frankfurter Sausage,Frankfurt Sausage,Domestic Pig,Dish
+274,Ham,Ham,Domestic Pig,Meat
+275,Lamb,Lamb,Sheep,Meat
+276,Meat,Meat,Mammal,Meat
+277,Mutton,Mutton,Sheep,Meat
+278,Pork,"Pork, Bacon",Domestic Pig,Meat
+279,Sukiyaki,Sukiyaki,Cattle,Meat
+280,Turkey,Turkey,Domesticate Turkey,Meat
+281,Almond,Almond,Prunus,Nut
+282,Brazil Nut,Brazil Nut,Bertholletia Excelsa,Nut
+283,Cocoa,Cocoa,Theobroma,Seed
+284,Beans,Beans,Fabaceae,Legume
+285,Lima Beans,"Lima Bean, Butter Bean, Sieva Bean",Phaseolus Lunatus,Legume
+286,Kidney Beans,"Red Kidney Bean, Common Kidney Bean, Rajma, String Bean, Field Bean, Flageolet Bean, French Bean, Garden Bean, Green Bean, Haricot Bean",Phaseolus Vulgaris,Legume
+287,Peanut,"Groundnut, Goober",Arachis,Nut
+288,Peas,Peas,Pisum Sativum,Legume
+289,Soybean,Soya bean,Glycine,Legume
+290,Soybean Oil,Soya bean Oil,Glycine,Legume
+291,Soybean Sauce,Soya sauce,Glycine,Plant Derivative
+292,Filbert,Hazel Nut,Corylus,Nut
+293,Hazelnut,"Cobnut, Filbert Nut",Hazel,Nut
+294,Macadamia Nut,"Queensland nut, Bush nut, Maroochi nut, Bauple nut, Hawaii nut",Macadamia,Nut
+295,Nuts,Nuts,Fagaceae,Nut
+296,Pecans,Pecans,Hickory,Nut
+297,Walnut,Walnut,Juglans,Nut
+298,Muskmallow,"Abelmosk, Ambrette seeds, Annual hibiscus, Bamia Moschata, Galu Gasturi, Muskdana, Musk okra, Musk seeds, Ornamental okra",Abelmoschus,Seed
+299,Sesame,Sesame,Sesamum,Seed
+300,Allium,"Allium, Allium Caucas",Allium,Plant
+301,Alpinia,"Alpinia, Ginger Lilly",Alpinia,Plant
+302,Ceriman,"Fruit salad plant, Fruit salad tree, Swiss cheese plant, Cheese plant, Monster fruit, Monsterio delicio, Monstereo, Mexican breadfruit",Monstera,Plant
+303,Chicory,"Blue Daisy, Blue Dandelion, Blue Sailors, Blue Weed, Bunk, Coffeeweed, Wild Bachelors bButtons, Wild Endive",Cichorium,Plant
+304,Hops,Hops,Humulus Lupulus,Plant
+305,Laurel,"Bay Laurel, Sweet Bay, Bay, True Laurel, Grecian Laurel, Laurel tree",Laurus,Plant
+306,Myrtle,Myrtle,Myrtus,Plant
+307,Olive,Olive,Olea,Plant
+308,Pine,Pine,Pinus,Plant
+309,Sassafras,Sassafras,Sassafras,Plant
+310,Tea,Tea,Camellia Sinensis,Plant
+311,Fermented Tea,Dark tea,Camellia Sinensis,Plant Derivative
+312,Tobacco,Tobacco,Nicotiana,Plant
+313,Watercress,Watercress,Nasturtium,Plant
+314,Creosote,Creosote,Archaeopteris,Plant Derivative
+315,Honey,Honey,Bees,Plant Derivative
+316,Macaroni,Macaroni,Drurum,Plant Derivative
+317,Mustard Oil,Mustard Oil,Brassica,Plant Derivative
+318,Peanut Butter,Peanut Butter,Arachis,Plant Derivative
+319,Peanut Oil,Peanut Oil,Arachis,Plant Derivative
+320,Rye,Rye,Secale Cereale,Cereal
+321,Storax,"Styrax, Storax, Storax balsam",Liquidambar Orientalis,Plant Derivative
+322,Vinegar,Vinegar,Apple,Plant Derivative
+323,Anise,"Aniseed, Saunf",Pimpinella,Spice
+324,Anise Hyssop,"Blue Giant Hyssop, Fragrant Giant Hyssop",Agastache,Spice
+325,Star Anise,"Star Anise, Staranise, Star Anise Seed, Chinese Star Anise, Badiam",Illicium,Spice
+326,Caraway,"Meridian Fennel, Persian Cumin",Carum,Spice
+327,Cardamom,Cardamom,Elattaria,Spice
+328,Cassia,"Chinese Cassia, Chinese Cinnamon",Cinnamomum,Spice
+329,Celery,Celery,Apium,Spice
+330,Cinnamon,Cinnamon,Cinnamomum,Spice
+331,Clove,Clove,Syzygium,Spice
+332,Cumin,Cumin,Cuminum,Spice
+333,Ginger,Ginger,Zingiber,Spice
+334,Mace,Mace,Myristica,Spice
+335,Marjoram,"Oregano, Sweet Marjoram, Knotted Marjoram, Pot Marjoram",Origanum Majorana,Spice
+336,Nutmeg,Nutmeg,Myristica,Spice
+337,Oregano,Oregano,Origanum Vulgare,Spice
+338,Parsley,Parsley,Petroselinum,Spice
+339,Pepper,Pepper,Piper,Spice
+340,Saffron,Saffron,Crocus Sativus,Spice
+341,Turmeric,Turmeric,Curcuma,Spice
+342,Green Beans,"French Beans, String Beans, Snap Beans",Phaseolus Vulgaris,Vegetable
+343,Chive,Chive,Allium,Vegetable
+344,Endive,Endive,Cichorium,Vegetable
+345,Leek,Leek,Allium Ampeloprasum,Vegetable
+346,Lettuce,Lettuce,Lettuce,Vegetable
+347,Okra,"Okro, Lady's fingers, Ngombo",Abelmosch,Vegetable
+348,Onion,Bulb onion,Allium,Vegetable
+349,Shallot,Shallot,Allium,Vegetable
+350,Peppermint,Peppermint,Mentha,Herb
+351,Broccoli,Broccoli,Brassica Oleracea,Cabbage
+352,Brussels Sprout,Breussels Sprout,Brassica Oleracea,Cabbage
+353,Cabbage,Cabbage,Brassicaceae,Cabbage
+354,Cauliflower,Cauliflower,Brassica Oleracea,Cabbage
+355,Horseradish,Horseradish,Armoracia Rusticana,Cabbage
+356,Mustard,Mustard,Brassica,Cabbage
+357,Radish,Radish,Raphanus,Vegetable Root
+358,Turnip,"White turnip, Swedish turnip",Brassica,Vegetable Root
+359,Kohlrabi,"German turnip, turnip cabbage",Brassica Oleracea,Cabbage
+360,Rutabaga,"Swede, Neep",Brassica Napus,Vegetable Root
+361,Wasabi,Wasabi,Wasabi,Cabbage
+362,Capsicum,Sweet Pepper,Capsicum Annuum,Vegetable Fruit
+363,Cherry Pepper,"Pimento, Cherry pepper",Capsicum Annuum,Vegetable Fruit
+364,Tomato,Tomato,Solanum,Vegetable Fruit
+365,Chayote,"Christophine, Cho-Cho, Pipinola, Pear Squash, Vegetable Pear, Choko",Sechium,Gourd
+366,Cucumber,Cucumber,Cucumis,Gourd
+367,Beetroot,"Beet, Table Beet, Garden Beet, Red Beet, Golden Beet, Sugar Beet",Beta Vulgaris,Vegetable Root
+368,Carrot,Carrot,Daucus,Vegetable Root
+369,Parsnip,Parsnip,Pastinaca,Vegetable Root
+370,Sweet Potato,Sweet Potato,Ipomoea,Vegetable Root
+371,Asparagus,Garden Asparagus,Asparagus,Vegetable Stem
+372,Cassava,"Yuca, Manioc, Mandioca, Brazilian Arrowroot",Manihot,Vegetable Tuber
+373,Potato,Potato,Solanum,Vegetable Tuber
+374,Fried Potato,Fried Potato,Solanum,Bakery
+375,Allspice,"Allspice, Pimenta, Myrtle Pepper",Pimenta,Spice
+376,Asafoetida,"Hing, Asant, Asafedity, Kayam, Henjana, Jowani Badian, Ingu, Devil's Dung",Ferula,Spice
+377,Ashgourd,"Ash Gourd, White Gourd, Tallow Goud, Chinese Preserving Melon",Benincasa,Gourd
+378,Bittergourd,"Bitter Gourd, Bitter Squash, Balsam Pear, Kugua, Nigauri, Kaipakka, Kakarakaya, Hagala, Pakal, Karela, Kareli, Uchche, Cerasee",Momordica,Gourd
+379,Bottlegourd,"Bottle Gourd, White-flowered Gourd, Opo Squash, Long Melon, Suzza Melon, New Guinea Bean, Tasmania Bean",Lagenaria,Gourd
+380,Canola Oil,Canola Oil,Brassicaceae,Essential Oil
+381,Carom Seed,"Ajwain, Ajowan, Ajowan Caraway, Bishops Weed",Ajwain,Spice
+382,Chard,Chard,Sea Beet,Vegetable
+383,Apple Cider Vinegar,Apple Cider Vinegar,Apple,Plant Derivative
+384,Colocasia,Colocasia,Araceae,Vegetable
+385,Curry Leaf,Sweet Neem Leaves,Murraya,Herb
+386,Drumstick Leaf,Moringa,Moringa,Vegetable
+387,Eggplant,"Aubergine, Brinjal",Solanum,Vegetable
+388,Flaxseed,Flaxseed,Linum,Seed
+389,Jalapeno,"Huachinango, Cuaresmeno, Xalapa",Capsicum annuum,Spice
+390,Kenaf,"Deccan Hemp, Java Jute, Shougri, Ambaadi, Palungu, Kanaf, Ambari, Kudrum, Mesta, Gongura, Bimli",Hibiscus cannabinus,Essential Oil
+391,Lotus,Lotus,Nelumbo nucifera,Essential Oil
+392,Nigella Seed,"Black Caraway, Kalonji, Black Cumin, Fennel Flower, Nutmeg Flower, Roman Coriander",Nigella,Seed
+393,Kewda,"Screw-pine, Kewda, Pandanus fasicularis",Pandanus,Essential Oil
+394,Pomegranate,Pomegranate,Punica,Fruit
+395,Poppy Seed,Poppy Seed,Papaver,Spice
+396,Spinach,Palak,Spinacia,Vegetable
+397,Turkey Berry,"Solanum Torvum, Prickly Nightshade, Shoo-shoo Bush, Wild Eggplant, Pea Eggplant, Susumber, Kudanekayi, Sundaikkai",Solanum,Vegetable Fruit
+398,Water Chestnut,"Water Caltrop, Buffalo Nut, Bat Nut, Devil Pod, Ling Nut, Lin Kok, Ling Kio Nut, Singhara, Singhada, Paniphal",Trapa natans,Fruit
+399,White Pepper,White Pepper,Piper,Spice
+400,Garcinia Indica,Kokum,Garnicia,Fruit
+401,Cluster Bean,"Guar, Gavar Bean, Guwar Bean, Guvar Bean",Cyamopsis,Legume
+402,Paneer,Chhena,Cattle,Dairy
+403,Pigeon Pea,"No-eye Pea, Tropical Green Pea, Arhar, Red Gram, Gandule Bean",Cajanus,Legume
+404,Basmati Rice,Basmati Rice,Oryza,Cereal
+405,Ricotta Cheese,Ricotta Cheese,Cattle,Dairy
+408,Silver linden,Silver lime,Malvaceae,Herb
+409,redskin onion,Redskin onion,Allium,Vegetable
+410,Lemon verbena,Lemon beebrush,Aloyisa,Herb
+411,Cashew nut,Cashew nut,Anacardium,Nut
+412,Burdock,"Greater burdock, Gob, Edible burdock, Lappa, Beggar's buttons, Thorny burr,  Happy major",Arcticum,Vegetable
+413,Borage,Sar flower,Borago,Herb
+414,Capers,Flinders rose,Capparis,Herb
+415,Safflower,Safflower,Carthamus,Herb
+416,Chestnut,Chestnut,Chestnut,Nut
+417,Chickpea,"Bengal gram, Garbanzo,  Garbanzo bean, Egyptian pea.",Cicer,Legume
+418,Pummelo,"Pomello, Pummelo, Pommelo, Pamplemousse, Jabong, Batabi, Jambura, Zambura, Shaddock",Citrus,Fruit Citrus
+419,Arabica coffee,Arabica coffee,Coffee,Beverage Caffeinated
+421,Japanese persimmon,Diospyros kaki,Diospyros,Fruit
+422,Black crowberry,"Crowberry, Black crowberry",Empetrum,Berry
+423,Rocket salad,"Arugula,  Rucola, Rucoli, Rugula, Colewort, Roquette, Garden rocket, Rocket, Eruca",Eruca,Herb
+424,Tartary buckwheat,"Duckwheat, India buckwheat, India wheat, Green buckwheat, Ku qiao, Bitter buckwheat",Fagopyrum,Cereal
+425,Black huckleberry,Black huckleberry,Gaylussacia,Berry
+426,Sunflower,Helianthus,Helianthus,Flower
+427,Swamp cabbage,"Water spinach, River spinach, Water morning glory, Water convolvulus",Ipomoea,Cabbage
+428,Grass pea,"Grass pea, Blue sweet pea, Chickling pea, Chickling vetch, Indian pea, White pea, White vetch",Lathyrus,Legume
+429,Lentils,Lentils,Lens,Legume
+430,Garden cress,"Mustard, Cress, Garden pepper cress, Pepperwort, Pepper grass, Poor man's pepper",Lepidium,Herb
+431,Mexican oregano,"Mexican oregano, Redbrush lippia, Orégano Cimmaron, Scented lippia, Scented matgrass",Lippia,Herb
+432,Lupine,"Lupin, Tarwi, Chocho",Lupinus,Plant
+433,Medlar,Common medlar,Mespilus,Fruit
+434,Mulberry,Mulberry,Morus,Berry
+435,Black mulberry,Black mulberry,Morus,Berry
+436,Evening primrose,Evening primrose,Oenothera,Herb
+437,Millet,Millet,Poaceae,Legume
+438,Scarlet bean,"Runner bean, Scarlet runner bean,  Multiflora bean",Phaseolus,Legume
+439,Pistachio,Pistachio,Pistacia,Nut
+440,Purslane,Purslane,Portulaca,Plant
+441,Red raspberry,European raspberry,Rubus,Berry
+442,Black raspberry,"Wild black raspberry, Black caps, Black cap raspberry, Thimbleberry, Scotch cap",Rubus,Berry
+443,Sorrel,"Common sorrel, Garden sorrel,  Spinach dock, Narrow-leaved dock",Rumex,Herb
+444,Summer savory,Summer savory,Satureja,Herb
+445,Winter savory,Winter savory,Satureja,Herb
+446,Cherry tomato,Cherry tomato,Solanum,Berry
+447,Rowanberry,"Rowan, mountain-ash, Amur mountain ash, European mountain ash, Quick beam, Quickbeam, Rowan berry",Sorbus,Berry
+448,Sorghum,"Sorghum, Great millet, Durra, Jowari, Milo,",Sorghum,Cereal
+449,Dandelion,common dandelion,Taraxacum,Flower
+450,Linden,"Linden, Common linden",Tilia,Herb
+451,Small leaf linden,"Small-leaved lime, Littleleaf linden, Small-leaved linden",Tilia,Plant
+452,Wheat,"Common wheat, Bread wheat",Triticum,Cereal
+453,Sparkleberry,Farkleberry,Vaccinium,Berry
+454,Common verbena,"Common vervain, Common verbena",Verbena,Herb
+455,Adzuki bean,"azuki, aduki, Red mung bean",Vigna,Legume
+456,Gram bean,"Vigna mungo, Black gram, Urad bean, Mungo bean, Black matpe bean",Vigna,Legume
+457,Mung bean,"Moong bean, Green gram, Mung",Vigna,Legume
+458,Climbing bean,"Ricebean, Rice bean",Vigna,Legume
+459,Muscadine grape,muscadine,Vitis,Fruit
+460,Bayberry,"Bay-rum tree, Candleberry, Sweet gale, Wax-myrtle",Myrica,Berry
+461,Elliott's blueberry,Elliott's blueberry,Vaccinium,Berry
+462,Canada blueberry,"Common blueberry, Velvetleaf huckleberry, Velvetleaf blueberry, Sourtop blueberry.",Vaccinium,Berry
+463,Buffalo currant,"Golden currant, Clove currant, Pruterberry, Buffalo currant,",Ribes,Fruit
+464,Deerberry,"Deerberry, Tall deerberry, Squaw huckleberry, Highbush huckleberry, Buckberry, Southern gooseberry",Vaccinium,Berry
+465,Ginseng,Ginseng,Panax,Vegetable Root
+466,Longan,Longan,Dimocarpus,Plant
+467,Pepper C. baccatum,Capsicum baccatum,Capsicum Baccatum,Vegetable
+468,Pepper C. chinense,Capsicum chinese,Capsicum chinense,Vegetable
+469,Rambutan,Rambutan,Nephelium,Fruit
+470,Red rice,"Brownbeard rice, Wild rice, Red rice",Oryza,Cereal
+471,Annual wild rice,"Canada rice, Indian rice, Water oats",Zizania,Cereal
+472,Welsh onion,"Bunching onion, Long green onion, Japanese bunching onion, Scallion, Spring onion, Welsh onion",Allium fistulosum,Vegetable
+473,Hard wheat,"Durum wheat, Pasta wheat, Macaroni wheat",Triticum durum,Cereal
+474,Triticale,Triticale,Triticosecale,Cereal
+475,Komatsuna,"Japanese mustard spinach, Mustard Spinach",Brassica rapa,Cabbage
+476,Pak choy,Bok choy,Brassica rapa,Cabbage
+477,Jostaberry,Jostaberry,Ribes,Berry
+478,Kai lan,"Chinese broccoli, Chinese kale",Brassica oleracea,Cabbage
+480,Pineappple sage,tangerine sage,Salvia,Herb
+481,Skunk currant,Skunk currant,Ribes,Fruit
+482,Breakfast cereal,Breakfast cereal,Wheat,Cereal
+484,Pasta,Pasta,Durum,Bakery
+485,Biscuit,Biscuit,,Bakery
+486,Sourdough,Sourdough,,Cereal
+487,Spirit,"Distilled beverage, Spirit, Liquor, Hard liquor, Hard alcohol",Plant,Beverage Alcoholic
+488,Beverage alcolohic other,Beverage alcolohic other,,Beverage Alcoholic
+489,Abalone,"Ear shells, Sea ears, Muttonfish, Muttonshells, Ormer, Perlemoen",Haliotis,Fungus
+490,Abiyuch,"sacred garlic pear, temple plant",Crateva,Plant
+491,Acerola,"Barbados cherry, West Indian cherry, Wild crepe myrtle, Seriz",Malpighia,Berry
+492,Acorn,oak nut,Fagaceae,Nut
+493,Winter squash,Winter squash,Cucurbita,Fruit
+494,Agar,agar-agar,Algae,Additive
+495,Red king crab,"Paralithodes camtschaticus, Kamchatka crab, Alaskan king crab",King crab,Seafood
+496,Alfalfa,lucerne,Medicago,Herb
+497,Amaranth,Amaranthus,Amaranthus,Herb
+498,Arrowhead,"Broadleaf arrowhead, Duck-potato, Indian potato, Wapato",Sagittaria,Vegetable Tuber
+499,Arrowroot,"Arrowroot, Maranta, West Indian arrowroot, Obedience plant, Bermuda arrowroot, Araru, Ararao, Hulankeeriya,",Maranta,Vegetable Tuber
+500,Atlantic herring,Atlantic herring,Clupea,Fish
+501,Atlantic mackerel,"Boston mackerel, Norwegian mackerel, Scottish mackerel, Mackerel",Scomber,Fish
+502,Painted comber,Painted comber,Serranus,Fish
+503,Atlantic pollock,European pollock,Pollachius,Fish
+504,Atlantic wolffish,"Seawolf, Atlantic catfish, Ocean catfish, Devil fish, Wolf eel, Woof, Sea cat",Anarhichas,Fish
+505,Bamboo shoots,bamboo sprouts,Bamboo,Plant
+506,Striped bass,"Atlantic striped bass, Striper, linesider, Rock, Rockfish",Morone,Fish
+507,Beaver,Beaver,Castor,Meat
+508,Beech nut,Beech nut,Fagaceae,Nut
+509,Beluga whale,"White whale, Beluga, Melonhead, Sea canary",Monodontidae,Fish
+510,Bison,Bison,Bison,Meat
+511,Black bear,Black bear,Ursus,Meat
+512,Alaska blackfish,Alaska blackfish,Dallia,Fish
+513,Northern bluefin tuna,"Northern bluefin tuna, Giant bluefin tuna, Tunny",Thunnus,Fish
+514,Bluefish,"Tailor, Elf, Shad, Blue, Chopper, Anchoa",Pomatomidae,Fish
+515,Wild boar,"Wild swine, Eurasian wild pig,",Sus,Meat
+516,Bowhead whale,"Greenland right whale, Arctic whale, Steeple-top, Polar whale, Russian whale",Balaena,Fish
+517,Breadfruit,Breadfruit,Artocarpus,Fruit
+518,Breadnut tree seed,"Breadnut, Maya nut",Brosimum,Plant Derivative
+519,Rapini,"Broccoli raab, Broccoli rabe",Brassica rapa,Cabbage
+520,Brown bear,Brown bear,Ursus,Meat
+521,Buffalo,Domestic Asian water buffalo,Bubalus,Meat
+522,Burbot,"Bubbot, Mariah, Freshwater ling, The lawyer, Coney-fish, Lingcod, Freshwater cusk, Eelpout",Lota,Fish
+523,Giant butterbur,"Butterbur, Great butterbur, Sweet coltsfoot",Petasites,Plant
+524,American butterfish,American butterfish,Peprilus,Fish
+525,Butternut,White walnut,Juglans,Nut
+526,Butternut squash,"Butternut pumpkin, Gramma",Cucurbita,Fruit
+527,Cardoon,Artichoke thistle,Cynara,Plant
+528,Caribou,Caribou,Reindeer,Meat
+529,Natal plum,Large Num Num,Carissa,Fruit
+530,Carob,"St John's bread, Locust bean, Locust tree",Ceratonia,Plant
+531,Common carp,European carp,Cyprinus,Fish
+532,Channel catfish,Channel cat,Catfish,Fish
+533,Chia,Chia,Salvia,Herb
+534,Chinese chestnut,Chinese chestnut,Castanea,Nut
+535,Garland chrysanthemum,"Chrysanthemum greens, Edible chrysanthemum, Crowndaisy chrysanthemum, Chop suey green, Crown daisy, Japanese green.",Glebionis,Flower
+536,Cisco,Cisco,Coregonus,Fish
+537,Nuttall cockle,"Nuttall's cockle,Basket cockle, Heart cockle",Clinocardium,Fish
+538,Common octopus,Common octopus,Octopus,Seafood
+539,Corn salad,"Common cornsalad, Lamb's lettuce, Mâche, Fetticus, Feldsalat, Nut lettuce, Field salad, Rapunzel.",Valerianella,Vegetable
+540,Cottonseed,Cotton seed,Cotton,Plant Derivative
+541,Catjang pea,Catjang,Vigna,Legume
+542,Squashberry,"Squash Berry, Mooseberry, Pembina, Pimbina",Viburnum,Berry
+543,Atlantic croaker,Atlantic croaker,Micropogonias,Fish
+544,Cusk,"Tusk, Brismak, Brosmius, Torsk, Moonfish",Lotidae,Fish
+545,Cuttlefish,Cuttlefish,Cephalopoda,Fish
+546,Mule deer,Mule deer,Odocoileus,Meat
+547,Devilfish,Giant devil ray,Mobula mobular,Fish
+548,Dock,Dock,Rumex,Herb
+549,Dolphin fish,"Mahi-mahi, Common dolphinfish, Dorado, Dolphin",Coryphaena,Fish
+550,Freshwater drum,Aplodinotus grunniens,Sciaenidae,Fish
+551,Mallard duck,"Mallard, Wild duck",Anas,Meat
+552,Freshwater eel,Freshwater eel,Anguillidae,Fish
+553,Elk,Wapiti,Cervus,Meat
+554,Emu,Emu,Dromaius,Meat
+555,Oregon yampah,Eppaw,Perideridia,Plant
+556,European anchovy,European anchovy,Engraulis,Fish
+557,European chestnut,sweet chestnut,Castanea,Nut
+558,Turbot,Turbot,Scophthalmus,Fish
+559,Fireweed,"Great willowherb, Rosebay willowherb",Chamaenerion,Herb
+560,Florida pompano,Florida pompano,Pompano,Fish
+561,Ginkgo nuts,"Ginkgo,  Gingko",Ginkgo,Nut
+562,Greylag goose,Greylag goose,Anser,Meat
+563,Greenland halibut,"Greenland turbot,  Greenland halibut",Reinhardtius,Fish
+564,Groundcherry,"Inca berry, Cape gooseberry, Poha berries, Golden berries",Physalis,Berry
+565,Grouper,Grouper,Epinephelus,Fish
+566,Haddock,Haddock,Gadidae,Fish
+567,Hippoglossus,Common halibut,Hippoglossus,Fish
+568,Horse,Horse,Equus,Meat
+569,Hyacinth bean,"Hyacinth bean, Lablab-bean, Bonavist bean, Dolichos bean, Seim bean, Lablab bean, Egyptian kidney bean, Indian bean, Bataw, Australian pea",Lablab,Legume
+570,Irish moss,Carrageen moss,Red algae,Seafood
+571,Pacific jack mackerel,"Californian jack mackerel, Jack mackerel",Trachurus,Fish
+572,Japanese chestnut,"Korean chestnut, Korean castanea",Castanea,Nut
+573,Jerusalem artichoke,"Sunroot, Sunchoke, Earth apple, Topinambour",Helianthus,Vegetable Tuber
+574,Jujube,"Red date, Chinese date, Korean date, Indian date",Ziziphus,Fruit
+575,Jute,Jute,Corchorus,Plant Derivative
+576,Kale,Leaf cabbage,Brassica oleracea,Cabbage
+577,King mackerel,Kingfish,Scomberomorus,Fish
+578,Lambsquarters,"Lamb's quarters, Melde, Goosefoot, Fat hen",Chenopodium,Plant
+579,Leather chiton,"Black Katy chiton, Black Leather chiton, Black chiton",Katharina,Seafood
+580,Common ling,"Ling, Molva molva",Molva,Fish
+581,Lingcod,"Ling cod, Buffalo cod, Cultus cod",Hexagrammidae,Fish
+582,White lupine,Field lupine,Lupinus,Plant
+583,Malabar spinach,"Vine spinach, Red vine spinach, Climbing spinach, Creeping spinach, Buffalo spinach, Ceylon spinach",Basella,Vegetable
+584,Mammee apple,"Mammee, Mamey, Mamey apple, Santo Domingo apricot, Tropical apricot, South American apricot",Mammea,Fruit
+585,Purple mangosteen,Mangosteen,Garcinia,Fruit
+586,Alpine sweetvetch,Alpine sweetvetch,Hedysarum,Plant
+587,Milkfish,Milkfish,Chanidae,Fish
+588,Monkfish,"Fishing frogs, Frog fish and Sea devils",Lophius,Fish
+589,Moose,Moose,Capreolinae,Meat
+590,Moth bean,"Mat bean, Matki, Turkish gram, Dew bean.",Vigna,Legume
+591,Mountain yam,"Chinese yam, Cinnamon vine",Dioscorea,Vegetable Tuber
+592,Striped mullet,"Flathead mullet, striped mullet, Black mullet, Bully mullet, Common mullet, Grey mullet, Sea mullet, Mullet,  Flathead grey mullet",Mugil,Fish
+593,Muskrat,Muskrat,Arvicolinae,Meat
+594,New Zealand spinach,"Botany Bay spinach, Cook's cabbage, kōkihi, Sea spinach, Tetragon, Warrigal greens and Warrigal cabbage",Tetragonia,Vegetable
+595,Nopal,Nopal,Opuntia,Plant
+596,Ocean pout,Ocean pout,Zoarces,Fish
+597,North Pacific giant octopus,Giant Pacific octopus,Enteroctopus,Seafood
+598,Ohelo berry,Ohelo berry,Vaccinium,Berry
+600,Opossum,Opossum,Marsupial,Meat
+601,Ostrich,common ostrich,Struthio,Meat
+602,Spotted seal,"Larga seal, Largha seal",Phoca,Seafood
+603,Pacific herring,Pacific herring,Clupea,Fish
+604,Pacific rockfish,Rock_cod,Lotella,Fish
+606,Common persimmon,"American persimmon, Eastern persimmon, Simmon, Possumwood, Sugar plum",Diospyros,Fruit
+607,Pheasant,Common pheasant,Phasianus,Meat
+608,Northern pike,Pike,Esox,Fish
+609,Pili nut,Pili nut,Canarium,Nut
+610,Colorado pinyon,"Two-needle piñon, Pinyon pine, Simply piñon,",Pinus,Plant
+611,Pitanga,"Suriname cherry, Brazilian cherry, Cayenne cherry, Cerisier Carré",Eugenia,Berry
+612,French plantain,French plantain,Musa × paradisiaca,Plant
+613,American pokeweed,pokeweed,Phytolacca,Herb
+614,Polar bear,Polar bear,Ursus,Meat
+615,Prairie turnip,"Tipsin, Teepsenee, Breadroot, Breadroot scurf pea, Large Indian breadroot, Pomme blanche",Psoralea,Cabbage
+616,Quinoa,Quinoa,Chenopodium,Cereal
+617,European rabbit,Common rabbit,Leporidae,Meat
+618,Raccoon,"Common raccoon, North American raccoon, Northern raccoon, Coon",Procyon,Meat
+619,Rainbow smelt,Rainbow smelt,Osmerus,Fish
+620,Rainbow trout,Rainbow trout,Oncorhynchus,Fish
+621,Malabar plum,"Champakka, Chom pu, Chom phu",Syzygium,Fruit
+622,Rose hip,"Rose haw, Rose hep",Rose,Fruit
+623,Roselle,Roselle,Hibiscus,Herb
+624,Orange roughy,"Red roughy, Slimehead, Deep sea perch",Hoplostethus,Fish
+625,Sablefish,"Sable, Butterfish, Black cod, Blue cod, Bluefish, Candlefish, Coal cod, Coalfish, Beshow, Skilfish)",Anoplopomatidae,Fish
+626,Pink salmon,Humpback salmon,Oncorhynchus,Fish
+627,Chum salmon,"Dog salmon, Keta salmon, Silverbrite salmon",Oncorhynchus,Fish
+628,Coho salmon,"Silver salmon,Silvers",Oncorhynchus,Fish
+629,Sockeye salmon,"Red salmon, Kokanee salmon, Blueback salmon",Oncorhynchus,Fish
+630,Chinook salmon,"King salmon, Quinnat salmon, Spring salmon, Tyee salmon",Oncorhynchus,Fish
+631,Atlantic salmon,Atlantic salmon,Salmo,Fish
+632,Salmonberry,Salmonberry,Rubus,Berry
+633,Common salsify,"Purple salsify, Oyster plant, Vegetable oyster, Jerusalem star",Tragopogon,Plant
+634,Spanish mackerel,Seerfishes,Scomberomorus,Fish
+635,Pacific sardine,"South American pilchard,  Blue pilchard, Australian pilchard (S. s. neopilchardus), blue-bait, Pacific sardine, Southern African pilchard",Sardine,Fish
+636,Scup,Porgy,Sparidae,Fish
+637,Sea cucumber,Giant California sea cucumber,Echinozoa,Seafood
+638,Steller sea lion,"Northern sea lion, Steller's sea lion",Otariidae,Seafood
+639,Bearded seal,Square flipper seal,Phocidae,Seafood
+640,Ringed seal,"Jar seal, Netsik, Nattiq",Pusa,Seafood
+641,Sea trout,"Salmo trutta,  Morpha trutta",Salmo,Fish
+642,Sesbania flower,Sesbania flower,Sesbania,Flower
+643,American shad,American shad,Alosa,Fish
+644,Shark,Shark,Shark,Fish
+645,Sheefish,"Nelma, Sheefish, Inconnu, Connie",Stenodus,Fish
+646,Sheepshead,Sheepshead,Archosargus,Fish
+647,Hedge mustard,Hedge mustard,Sisymbrium,Cabbage
+648,Snapper,Snapper,Lutjanidae,Fish
+649,Spelt,"Dinkel wheat, Hulled wheat",Wheat,Cereal
+650,Spirulina,,Cyanobacteria,Additive
+651,Squab,Squab,Domestic pigeon,Meat
+652,Squirrel,Squirrel,Sciuridae,Meat
+653,Greater sturgeon,Greater sturgeon,Acipenser,Fish
+654,White sucker,"Bay fish, Brook sucker, Common sucker, Mullet, Sucker",Catostomus,Fish
+655,Pumpkinseed sunfish,"Pumpkinseed, Pond perch, Common sunfish, Punkys, Sunfish, Sunny, Kivver",Lepomis,Fish
+656,Swordfish,Swordfish,Perciformes,Fish
+657,Taro,Taro,Colocasia esculenta,Vegetable Tuber
+658,Teff,"Williams' lovegrass, Annual bunch grass",Eragrostis,Herb
+659,Tilefish,golden tile,Lopholatilus,Fish
+660,Mexican groundcherry,"Tomatillo, Mexican husk tomato",Physalis,Berry
+661,Towel gourd,Towel gourd,Cucurbitaceae,Gourd
+662,Salmonidae,Salmonidae,Salmonidae,Fish
+663,Walleye,"Yellow walleye, Pickerel",Sander,Fish
+664,Alaska pollock,Walleye pollock,Gadus,Fish
+665,Whelk,Whelk,Sea snail,Seafood
+667,Broad whitefish,Broad whitefish,Coregonus,Fish
+668,Whitefish,Whitefish,Coregonus,Fish
+669,Whiting,Merling,Gadidae,Fish
+670,Wild rice,"Canada rice, Indian rice, Water oats",Zizania,Cereal
+671,Tea leaf willow,"Diamondleaf willow, Tealeaf willow, Thin red willow",Willow,Herb
+672,Winged bean,"Goa bean, Four-angled bean, Four-cornered bean, Manila bean, Dragon bean",Psophocarpus,Legume
+673,Yam,Yam,Dioscorea,Vegetable Tuber
+674,Jicama,"Mexican yam bean, Mexican turnip",Pachyrhizus,Vegetable Tuber
+675,Yautia,"Arrowleaf elephant ear, Arrowleaf elephant's ear,",Xanthosoma,Plant
+676,Yellowfin tuna,ahi,Tuna,Fish
+677,Yellowtail amberjack,"Southern yellowtail amberjack, Yellowtail kingfish, Great amberjack, Seriola lalandi,",Seriola,Fish
+678,Pollock,Pollock,Gadidae,Fish
+679,Albacore tuna,longfin tuna,Tuna,Fish
+680,Atlantic halibut,Atlantic halibut,Flatfish,Fish
+682,Smelt,"Freshwater smelts, Typical smelts",Osmeriformes,Fish
+683,Clupeinae,"Herring, Sardine, Sprat",Clupeidae,Fish
+684,Spiny lobster,"Langustas, Langouste, Rock lobsters",,Seafood
+685,Black-eyed pea,"Goat pea, Black eyed bean,",Vigna unguiculata,Legume
+686,Deer,Deer,Cervidae,Meat
+687,Percoidei,Percoidei,Percoidei,Fish
+688,Perciformes,Perciformes,Acanthopterygii,Fish
+690,Rabbit,Rabbit,Leporidae,Meat
+691,Beefalo,"Cattalo, American hybrid",Cattle,Meat
+693,Bivalvia,"Lamellibranchiata, Pelecypoda,",Mollusca,Seafood
+694,Flatfish,Flatfish,Acanthopterygii,Fish
+695,Walrus,Walrus,Odobenidae,Seafood
+696,Alaska wild rhubarb,Alaska wild rhubarb,Aconogonon,Plant
+697,Oriental wheat,"Oriental wheat, kamut",Wheat,Cereal
+698,Yardlong bean,"Bora, Bodi, Long-podded cowpea, Asparagus bean, Pea bean, Snake bean, Chinese long bean",Cowpea,Legume
+699,Great horned owl,"Tiger owl,  Hoot owl",Horned owl,Meat
+700,Quail,Quail,Phasianidae,Meat
+701,Boysenberry,Boysenberry,Rubus,Berry
+702,Rowal,Rowal,Pangium,Plant
+703,Jew's ear,"Wood ear, Jelly ear",Auricularia,Fungus
+704,Shiitake,Shiitake,Lentinula,Fungus
+705,Purple laver,Purple laver,Seaweed,Seafood
+706,Wakame,Wakame,Edible seaweed,Seafood
+707,Enokitake,"Enokidake, Enoki",Flammulina,Fungus
+708,Epazote,"Wormseed, Jesuit's tea, Mexican-tea, Payqu, Epazote, Herba sancti Mariæ,",Dysphania,Herb
+709,Oyster mushroom,"Abalone mushrooms , Tree mushrooms",Pleurotaceae,Fungus
+710,Cloud ear fungus,"Black fungus, black Chinese fungus (or mushroom), Wood ear fungus, Wood fungus, Ear fungus, Tree ear fungus",Jelly fungus,Fungus
+711,Maitake,"Hen of the woods, Ram's head, Sheep's head.",Grifola,Fungus
+712,Ostrich fern,"Fiddlehead fern, Shuttlecock fern",Fern,Plant
+713,Spot croaker,Norfolk spot,Leiostomus,Fish
+714,Sourdock,Arctic dock,Rumex,Herb
+715,Tinda,"Indian squash, Round melon, Indian round gourd, Apple gourd, Indian baby pumpkin",Cucurbitaceae,Gourd
+716,Atlantic menhaden,Atlantic menhaden,Menhaden,Fish
+717,Agave,Agave,Agavoideae,Plant
+718,Narrowleaf cattail,"Lesser bulrush, Narrowleaf cattail, Lesser reedmace",Typha,Herb
+719,Jellyfish,Jellies,Medusozoa,Seafood
+720,Anchovy,Anchovy,Clupeiformes,Fish
+721,Blue whiting,Blue whiting,Micromesistius,Fish
+722,Carp bream,"Common bream, Freshwater Bream, Bream, Bronze bream, Carp bream",Cyprinidae,Fish
+723,Chanterelle,girolle,Cantharellus,Fungus
+724,Sturgeon,Sturgeon,Acipenseriformes,Fish
+725,Charr,Char,Salmon,Fish
+726,Common dab,Common dab,Flatfish,Fish
+727,Spiny dogfish,"Spiny dogfish, Spurdog, Mud shark, Piked dogfish",Spurdog,Fish
+728,Anatidae,Anatidae,Antidea,Meat
+729,Anguilliformes,Anguilliformes,Elopomorpha,Fish
+730,True frog,True frog,Frog,Meat
+731,Garfish,Sea needle,Belone,Fish
+732,Gadiformes,Anacanthini,,Fish
+733,Mountain hare,"Blue hare, Tundra hare, Variable hare, White hare, Snow hare, Alpine hare, Irish hare",Hare,Meat
+734,Lake trout,"Mackinaw, Lake char,  Touladi, Togue, Grey trout.",Salvelinus,Fish
+735,Lemon sole,Lemon sole,Flatfish,Fish
+736,Lumpsucker,Lumpfish,Scorpaeniformes,Fish
+737,Scombridae,Scombridae,,Fish
+738,Norway haddock,"Ocean perch, Atlantic redfish, Norway haddock, Red perch, Red bream, Golden redfish, Hemdurgan,",Sebastes,Fish
+739,Norway pout,Norway pout,Trisopterus,Fish
+740,Oil palm,Oil palm,Elaeis,Plant
+741,Sago palm,True sago palm,Metroxylon,Plant
+742,Persimmon,Persimon,Diospyros,Fruit
+743,Pikeperch,pike-perch,Percidae,Fish
+744,Pleuronectidae,Righteye flounders,Pleuronectidae,Fish
+745,Rock ptarmigan,"Ptarmigan, Snow chicken",Lagopus,Meat
+746,Pacific ocean perch,"Pacific rockfish, Rose fish, Red bream, Red perch",Sebastes,Fish
+747,Black salsify,"Spanish salsify, Black oyster plant, Serpent root, Viper's herb, Viper's grass, Scorzonera",Scorzonera,Plant
+748,True seal,"Earless seals, Crawling seals",Phocoidea,Seafood
+749,Red algae,Rhodophyta,Eukaryote,Seafood
+750,Kombu,Kombu,Saccharina japonica,Seafood
+751,Snail,Snail,Gastropoda,Meat
+752,True sole,True sole,Flatfish,Fish
+753,Catfish,Catfish,Ostariophysi,Fish
+754,Thistle,Thistle,Asteraceae,Plant
+755,Common Tuna,Common Tuna,Thunnus,Fish
+756,Cetacea,Cetacea,Cetacea,Fish
+757,Columbidae,Columbidae,Columbidae,Meat
+758,Conch,Conch,Strombus,Fish
+759,Berry wine,"Berry wine, fruit wine",Flowering plant,Beverage Alcoholic
+762,Vodka,Vodka,Cereal Grains,Beverage Alcoholic
+763,Ice cream,,,Dish
+764,Vermouth,Vermouth,Grape,Beverage Alcoholic
+765,Madeira wine,Madeira wine,Grape,Beverage Alcoholic
+766,Nougat,,,Dish
+767,Toffee,,,Dish
+768,Cake,,,Dish
+769,Pizza,,,Dish
+770,Ymer,,,Dairy
+771,Other snack food,,,Dish
+772,Pastry,,,Dish
+773,Dragée,,,Dish
+774,Chewing gum,,,Dish
+775,Marzipan,,,Dish
+776,Salad dressing,,,Dish
+777,Sauce,,,Additive
+778,Salt,,,Additive
+780,Cream,,Cattle,Dairy
+781,Sugar,,,Additive
+782,Sausage,,,Dish
+783,Meatball,,,Dish
+784,Pate,,,Dish
+785,Sugar substitute,,,Additive
+786,Meat bouillon,,,Dish
+787,Other meat product,,Animalia,Meat
+788,Whey,,Cattle,Dairy
+789,Casein,,,Additive
+790,Fruit preserve,,,Additive
+791,Leavening agent,,,Additive
+792,Marshmallow,Marshmallow,Maize,Bakery
+793,Gelatin,,,Additive
+794,Water,,,Additive
+795,Other fish product,,,Fish
+796,Milk Human,,Human,Dairy
+799,Dumpling,,,Dish
+800,Soup,,,Dish
+803,Syrup,,,Additive
+805,Remoulade,,,Dish
+806,Chocolate spread,,Theobroma,Plant Derivative
+807,Fruit gum,,,Dish
+810,Meringue,,,Bakery
+814,Cocoa butter,,Theobroma,Plant Derivative
+815,Cocoa powder,,Theobroma,Plant Derivative
+817,Chocolate,,Theobroma,Plant Derivative
+818,Hot chocolate,,Theobroma,Beverage
+820,Kefir,,Cattle,Dairy
+821,Other fermented milk,,Cattle,Dairy
+822,Miso,,,Additive
+823,Tofu,,Glycine,Plant Derivative
+824,Zwieback,,,Dish
+825,Roe,,,Fish
+826,Cichlidae,,Cichlid,Fish
+827,Icing,,,Additive
+828,Snack bar,,,Dish
+829,Green turtle,"Green turtle, Black turtle, Pacific green turtle",Cheloniidae,Meat
+830,Energy drink,,,Beverage
+831,Burrito,,,Dish
+832,Hamburger,,,Dish
+833,Chili,,,Dish
+834,Taco,,,Dish
+835,Tortilla,,,Dish
+836,Nachos,,,Dish
+837,Salad,,,Dish
+839,Dulce de leche,,Cattle,Dairy
+840,Topping,,,Additive
+841,Sweet custard,,Cattle,Dairy
+842,Egg roll,,,Dish
+843,Heart of palm,Arecaceae,Arecaceae,Vegetable
+845,Potato chip,,,Bakery
+846,Tortilla chip,,,Bakery
+847,Corn chip,,,Bakery
+848,Hibiscus tea,,Roselle,Beverage
+849,Stew,,,Dish
+850,Gelatin dessert,,,Additive
+851,Junket,,Cattle,Dairy
+852,Falafel,,,Dish
+853,Frybread,,,Dish
+854,Other frozen dessert,,,Dish
+855,Lasagna,,,Dish
+856,Morchella,Morchella,Ascomycota,Fungus
+857,Pancake,,,Dish
+858,Pectin,,,Additive
+859,Pudding,,,Dish
+860,Waffle,,,Dish
+861,Soy milk,,Glycine,Beverage
+862,Meatloaf,,,Dish
+863,Cocktail,,,Beverage
+864,Couscous,,,Dish
+865,Bulgur,,,Cereal
+867,Coffee mocha,,,Beverage Caffeinated
+868,Chimichanga,,,Dish
+869,Semolina,,,Cereal
+870,Tapioca pearl,,Cassava,Vegetable Tuber
+871,Tostada,,,Dish
+872,Quesadilla,,,Dish
+873,Baked potato,,,Dish
+874,Hot dog,,,Dish
+875,Spread,,,Additive
+876,Enchilada,,,Dish
+878,Nutritional drink,,,Beverage
+879,Other sandwich,,,Dish
+880,Ketchup,,,Additive
+881,Breakfast sandwich,,,Dish
+882,Adobo,,,Dish
+883,Macaroni and cheese,,,Dish
+884,Horned melon,,,Fruit
+885,Hushpuppy,,,Dish
+886,Fruit juice,,Fruits,Beverage
+887,Relish,,,Dish
+889,Fruit salad,,Fruits,Dish
+890,Soy yogurt,,Glycine,Plant Derivative
+891,Vegetarian food,,,Dish
+893,Cold cut,,,Dish
+894,Mixed nuts,,,Nut
+895,Babassu palm,"Babaçu, Cusi",Attalea (palm),Plant
+896,Cupuau,,Theobroma grandiflorum,Fruit
+897,Shea tree,"Shi tree, Vitellaria",Sapotaceae,Plant
+898,Oil-seed Camellia,"Ooil-seed camellia, Tea oil camellia",Camellia,Plant
+899,Ucuhuba,"Baboonwood, Chalviande",Virola surinamensis,Plant
+900,Phyllo dough,Phyllo dough,,Bakery
+901,Cooking oil,,,Additive
+902,Pie crust,,,Bakery
+904,Pie,,,Dish
+905,Shortening,,,Additive
+906,Soy cream,,,Dish
+907,Ice cream cone,,,Dish
+908,Molasses,black treacle,Sugar,Additive
+909,Nance,"Changunga, Muruçi, Nanche, Nance, Chacunga, Craboo, Kraabu, Savanna serrette, Golden spoon.",Byrsonima,Fruit
+911,Natto,,,Dish
+912,Ravioli,,,Dish
+913,Scrapple,,,Dish
+914,Other pasta dish,,,Dish
+915,Succotash,,,Dish
+916,Tamale,,,Dish
+917,Rice cake,,,Dish
+918,Tree fern,Tree fern,Tree fern,Plant
+919,Evaporated milk,,Cattle,Dairy
+920,Flour,,,Cereal
+921,Akutaq,,,Dish
+923,Pita bread,Pita bread,Poacceae,Bakery
+924,Focaccia,Focaccia,Poacceae,Bakery
+925,Bagel,Bagel,Poacceae,Bakery
+926,Other bread product,Other bread product,Poacceae,Bakery
+927,Piki bread,Piki bread,Poacceae,Bakery
+928,French toast,French toast,Poacceae,Bakery
+929,Oat bread,Oat bread,Poacceae,Bakery
+930,Potato bread,Potato bread,Poacceae,Bakery
+931,Cornbread,Cornbread,Corn,Maize
+932,Corn grits,Corn grits,Corn,Maize
+933,Multigrain bread,Multigrain bread,Poacceae,Bakery
+934,Rice bread,Rice bread,Poacceae,Bakery
+935,Pan dulce,Pan dulce,Poacceae,Bakery
+936,Raisin bread,Raisin bread,Poacceae,Bakery

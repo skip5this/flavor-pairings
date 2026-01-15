@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { SearchInput } from "@/components/SearchInput";
 import { PairingsList } from "@/components/PairingsList";
 import { SelectedIngredients } from "@/components/SelectedIngredients";
-import { getCommonPairings, getIngredientCount } from "@/lib/data";
+import { getCommonPairings, getIngredientCount, type Pairing } from "@/lib/data";
 
 export default function Home() {
   const [selectedIngredients, setSelectedIngredients] = useState<string[]>([]);
