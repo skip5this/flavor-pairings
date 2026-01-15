@@ -171,6 +171,8 @@ function mapToParentCategory(name: string): string {
     "green olives": "olives",
     "kalamata olives": "olives",
     "niçoise olives": "olives",
+    "tapenade": "olives",
+    "tapanade": "olives",
     // Bean variants
     "dried beans": "beans",
     "fresh beans": "beans",
@@ -285,10 +287,24 @@ function mapToParentCategory(name: string): string {
     "peach tea": "tea",
     // Gin
     "gin flavors": "gin",
+    // Tuna variants
+    "hamachi": "tuna",
+    "yellowtail": "tuna",
+    "yellow tail": "tuna",
+    "ahi": "tuna",
+    "ahi tuna": "tuna",
+    "albacore": "tuna",
+    "albacore tuna": "tuna",
+    "bluefin": "tuna",
+    "bluefin tuna": "tuna",
+    "skipjack": "tuna",
+    "skipjack tuna": "tuna",
     // Anchovies
     "anchovy": "anchovies",
     "anchovy paste": "anchovies",
     "white anchovies": "anchovies",
+    // Watercress
+    "watercess": "watercress",
     // Artichokes
     "artichoke": "artichokes",
     "artichoke hearts": "artichokes",
@@ -634,10 +650,36 @@ const excludeIngredients = new Set([
   "raspberry preserves", "salted seeds", "salted nuts", "salumi", "salami",
   "sopressata", "soda", "spice rub",
   "chartreuse", "chayote",
+  // Liquors and spirits
+  "aquavit", "vodka", "gin", "rum", "whiskey", "whisky", "bourbon",
+  "scotch", "tequila", "mezcal", "brandy", "cognac", "armagnac",
+  "calvados", "schnapps", "sake", "soju", "absinthe", "amaretto",
+  "campari", "aperol", "vermouth", "ouzo", "sambuca", "limoncello",
+  "frangelico", "midori", "grand marnier", "cointreau", "chambord",
+  "benedictine", "drambuie", "galliano", "pernod", "pastis", "kirsch",
+  "maraschino", "rye whiskey", "irish whiskey", "dark rum", "white rum",
+  "spiced rum", "gold rum", "silver tequila", "reposado", "añejo",
+  "cachaca", "caipirinha", "pisco", "eau de vie", "marc", "rakija",
+  "slivovitz", "tuica", "palinka", "baijiu", "shochu", "arrack",
+  "arak", "raki", "mastika", "genever", "jenever", "akvavit", "applejack", "edamame",
+  // Generic/vague terms
+  "tart fruit", "tart fruits", "rich foods", "rich food",
+  "fatty foods", "fatty food", "oily fish", "white fish", "firm fish",
+  "mild fish", "delicate fish", "strong cheese", "mild cheese",
+  "hard cheese", "soft cheese", "aged cheese", "fresh cheese",
+  "salty foods", "sweet foods", "bitter foods", "sour foods",
+  "umami foods", "savory foods", "acidic foods", "spicy foods",
+  "mild foods", "bold foods", "light foods", "heavy foods",
+  "tropical fruit", "tropical fruits", "citrus fruit", "citrus fruits",
+  "stone fruit", "stone fruits", "dried fruit", "dried fruits",
+  "fresh fruit", "fresh fruits", "ripe fruit", "ripe fruits",
+  "summer fruit", "summer fruits", "winter fruit", "winter fruits",
+  "red meat", "white meat", "dark meat", "game meat", "cured meat",
+  "smoked meat", "grilled meat", "roasted meat",
 ]);
 
 function shouldExclude(name: string): boolean {
-  const lower = name.toLowerCase();
+  const lower = name.toLowerCase().trim();
 
   // Pattern-based exclusions for multi-ingredient items
   const excludePatterns = [

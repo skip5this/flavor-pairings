@@ -15,9 +15,10 @@ export function PairingsList({
   onPairingClick,
 }: PairingsListProps) {
   // Map pairings to primary ingredients and deduplicate
+  // Only show primary ingredients (blue pills), filter out secondary (grey pills)
   const mappedPairings = useMemo(() => {
     const seen = new Set<string>();
-    const result: Array<{ display: string; isPrimary: boolean }> = [];
+    const result: string[] = [];
 
     for (const pairing of pairings) {
       const mapped = mapToPrimaryIngredient(pairing);
@@ -26,12 +27,11 @@ export function PairingsList({
       // Skip duplicates and skip if it's one of the selected ingredients
       if (seen.has(key)) continue;
       if (ingredients.some(i => i.toLowerCase() === key)) continue;
+      // Only include primary ingredients (skip grey pills)
+      if (!isPrimaryIngredient(mapped)) continue;
 
       seen.add(key);
-      result.push({
-        display: mapped,
-        isPrimary: isPrimaryIngredient(mapped),
-      });
+      result.push(mapped);
     }
 
     return result;
@@ -60,24 +60,15 @@ export function PairingsList({
         </p>
       </div>
       <div className="flex flex-wrap gap-2 sm:gap-3">
-        {mappedPairings.map(({ display, isPrimary }) => {
-          return isPrimary ? (
-            <button
-              key={display}
-              onClick={() => onPairingClick?.(display)}
-              className="px-4 py-2.5 bg-sky text-foreground rounded-xl text-sm capitalize hover:bg-sky-dark active:scale-95 transition-all whitespace-nowrap"
-            >
-              {display}
-            </button>
-          ) : (
-            <span
-              key={display}
-              className="px-4 py-2.5 bg-muted-bg text-foreground/70 rounded-xl text-sm capitalize whitespace-nowrap"
-            >
-              {display}
-            </span>
-          );
-        })}
+        {mappedPairings.map((display) => (
+          <button
+            key={display}
+            onClick={() => onPairingClick?.(display)}
+            className="px-4 py-2.5 bg-sky text-foreground rounded-xl text-sm capitalize hover:bg-sky-dark active:scale-95 transition-all whitespace-nowrap"
+          >
+            {display}
+          </button>
+        ))}
       </div>
     </div>
   );
