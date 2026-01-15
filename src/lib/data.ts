@@ -326,6 +326,23 @@ function mapToParentCategory(name: string): string {
     // Quince
     "quince paste": "quince",
     "quinces": "quince",
+    // Plural/singular mappings
+    "guavas": "guava",
+    "papayas": "papaya",
+    "tangerines": "tangerine",
+    "crabs": "crab",
+    "soft-shell crabs": "soft-shell crab",
+    "chicken livers": "chicken liver",
+    "bell pepper": "bell peppers",
+    "red bell pepper": "red bell peppers",
+    "caraway seed": "caraway seeds",
+    "carrot": "carrots",
+    "clove": "cloves",
+    "kumquat": "kumquats",
+    "onion": "onions",
+    "parsnip": "parsnips",
+    "persimmon": "persimmons",
+    "rutabaga": "rutabagas",
     // Pepper
     "black peppercorns": "black pepper",
     "white peppercorns": "white pepper",
