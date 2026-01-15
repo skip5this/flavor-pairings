@@ -624,6 +624,13 @@ const excludeIngredients = new Set([
   "pickled herring", "pistou", "plum paste", "poire william",
   "ponzu", "popcorn", "pot roast", "pretzels", "prosecco", "quinoa",
   "bouquet garni",
+  "rendered chicken fat", "chicken fat", "rocket", "romaine",
+  "salsa verde", "salsify", "southern comfort", "spaetzle",
+  "spanish tortilla", "sparkling", "steam", "steam sauté", "steam saute",
+  "succotash", "swiss romano", "thai red curry paste", "thai yellow curry paste",
+  "tilefish", "toasts", "triple sec", "tonic", "tonic water",
+  "vermicelli noodles", "whey", "white", "vincotto", "vin santo",
+  "wild boar", "zabaglione", "zinfandel",
 ]);
 
 function shouldExclude(name: string): boolean {
