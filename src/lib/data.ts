@@ -630,7 +630,7 @@ const excludeIngredients = new Set([
   "succotash", "swiss romano", "thai red curry paste", "thai yellow curry paste",
   "tilefish", "toasts", "triple sec", "tonic", "tonic water",
   "vermicelli noodles", "whey", "white", "vincotto", "vin santo",
-  "wild boar", "zabaglione", "zinfandel",
+  "wild boar", "zabaglione", "zinfandel", "spirits",
 ]);
 
 function shouldExclude(name: string): boolean {
