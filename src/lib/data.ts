@@ -292,6 +292,21 @@ function mapToParentCategory(name: string): string {
     // Artichokes
     "artichoke": "artichokes",
     "artichoke hearts": "artichokes",
+    // Leaf/leaves variants
+    "bay leaves": "bay leaf",
+    "celery leaf": "celery",
+    "celery leaves": "celery",
+    "leaves celery": "celery",
+    "leaves curry": "curry leaf",
+    "curry leaves": "curry leaf",
+    "powder curry leaves": "curry leaf",
+    "leaves fennel": "fennel",
+    "fennel leaves": "fennel",
+    "leaf basil": "basil",
+    "leaves kaffir lime": "kaffir lime",
+    "leaf lime": "kaffir lime",
+    "leaves lime": "kaffir lime",
+    "fenugreek leaves": "fenugreek",
     // Pepper
     "black peppercorns": "black pepper",
     "white peppercorns": "white pepper",
@@ -548,6 +563,7 @@ const excludeIngredients = new Set([
   "fruit crisp", "fruit juice",
   "baking powder", "baking soda",
   "achiote", "anisette",
+  "bavarian style cream", "red oak leaf lettuces", "red leaf lettuces",
 ]);
 
 function shouldExclude(name: string): boolean {
