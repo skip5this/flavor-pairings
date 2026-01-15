@@ -307,6 +307,11 @@ function mapToParentCategory(name: string): string {
     "leaf lime": "kaffir lime",
     "leaves lime": "kaffir lime",
     "fenugreek leaves": "fenugreek",
+    // Beets
+    "beet juice": "beets",
+    "beets juice": "beets",
+    "beet greens": "beets",
+    "beet": "beets",
     // Pepper
     "black peppercorns": "black pepper",
     "white peppercorns": "white pepper",
