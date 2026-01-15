@@ -633,6 +633,7 @@ const excludeIngredients = new Set([
   "wild boar", "zabaglione", "zinfandel", "spirits",
   "raspberry preserves", "salted seeds", "salted nuts", "salumi", "salami",
   "sopressata", "soda", "spice rub",
+  "chartreuse", "chayote",
 ]);
 
 function shouldExclude(name: string): boolean {
