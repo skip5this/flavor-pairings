@@ -312,6 +312,17 @@ function mapToParentCategory(name: string): string {
     "beets juice": "beets",
     "beet greens": "beets",
     "beet": "beets",
+    // Juice variants -> base ingredient
+    "apple juice": "apples",
+    "pineapple juice": "pineapple",
+    "carrot juice": "carrots",
+    "carrots juice": "carrots",
+    "cranberry juice": "cranberries",
+    "pomegranate juice": "pomegranate",
+    "orange juice": "oranges",
+    "lemon juice": "lemons",
+    "lime juice": "limes",
+    "grapefruit juice": "grapefruit",
     // Pepper
     "black peppercorns": "black pepper",
     "white peppercorns": "white pepper",
@@ -571,6 +582,7 @@ const excludeIngredients = new Set([
   "bavarian style cream", "red oak leaf lettuces", "red leaf lettuces",
   "calamari", "calf's liver", "citron",
   "clam juice", "coca-cola", "cola", "cold cuts",
+  "truffles juice", "oyster juice",
 ]);
 
 function shouldExclude(name: string): boolean {
