@@ -569,6 +569,7 @@ const excludeIngredients = new Set([
   "baking powder", "baking soda",
   "achiote", "anisette",
   "bavarian style cream", "red oak leaf lettuces", "red leaf lettuces",
+  "calamari", "calf's liver",
 ]);
 
 function shouldExclude(name: string): boolean {
