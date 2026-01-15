@@ -591,6 +591,14 @@ const excludeIngredients = new Set([
   "brown sugar", "powdered sugar", "caster sugar",
   "artificial maple syrup", "yeast",
   "curaçao", "curacao",
+  // More items to exclude
+  "emulsions", "etc. zest", "espelette", "faro", "farro", "flageolets",
+  "fluke", "flying fish roe", "focaccia", "framboise", "french pastries",
+  "fromage blanc", "fruit punches", "goat's milk", "grape jelly", "grappa",
+  "ground", "hamachi", "haricots verts", "herring", "hot dogs",
+  "ice", "ices", "indian chutney", "jellies", "jerk pastes", "jerk seasoning",
+  "kahlúa", "kahlua", "langoustines", "liquid smoke",
+  "m0starda", "mostarda", "macadamia", "macadamia oil", "macaroni", "maple",
 ]);
 
 function shouldExclude(name: string): boolean {
