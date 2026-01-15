@@ -584,6 +584,12 @@ const excludeIngredients = new Set([
   "clam juice", "coca-cola", "cola", "cold cuts",
   "truffles juice", "oyster juice",
   "crudités", "crudites", "crème de menthe", "creme de menthe",
+  // Basic baking ingredients (not flavor pairings)
+  "cream of tartar", "corn syrup", "dark corn syrup", "light corn syrup",
+  "arrowroot", "flour", "gelatin", "cornstarch", "pectin",
+  "confectioner's sugar", "granulated sugar", "light brown sugar",
+  "brown sugar", "powdered sugar", "caster sugar",
+  "artificial maple syrup", "yeast",
 ]);
 
 function shouldExclude(name: string): boolean {
