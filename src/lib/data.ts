@@ -631,6 +631,8 @@ const excludeIngredients = new Set([
   "tilefish", "toasts", "triple sec", "tonic", "tonic water",
   "vermicelli noodles", "whey", "white", "vincotto", "vin santo",
   "wild boar", "zabaglione", "zinfandel", "spirits",
+  "raspberry preserves", "salted seeds", "salted nuts", "salumi", "salami",
+  "sopressata", "soda", "spice rub",
 ]);
 
 function shouldExclude(name: string): boolean {
