@@ -599,6 +599,10 @@ const excludeIngredients = new Set([
   "ice", "ices", "indian chutney", "jellies", "jerk pastes", "jerk seasoning",
   "kahlúa", "kahlua", "langoustines", "liquid smoke",
   "m0starda", "mostarda", "macadamia", "macadamia oil", "macaroni", "maple",
+  "mild oil", "mexican salsas", "mâche", "mache", "nigella seeds",
+  "offal", "oil", "panforte", "peking", "phyllo dough",
+  "pickled herring", "pistou", "plum paste", "poire william",
+  "ponzu", "popcorn", "pot roast", "pretzels", "prosecco", "quinoa",
 ]);
 
 function shouldExclude(name: string): boolean {
