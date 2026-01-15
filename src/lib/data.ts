@@ -15,8 +15,8 @@ function normalizeIngredientName(name: string): string {
   trimmed = trimmed.replace(/^[^(]*\)\s*/g, "").trim(); // orphaned ")" at start
   trimmed = trimmed.replace(/\)\s*$/g, "").trim(); // orphaned ")" at end
 
-  // Remove trailing periods
-  trimmed = trimmed.replace(/\.+$/, "").trim();
+  // Remove trailing periods and quotes
+  trimmed = trimmed.replace(/[."']+$/, "").trim();
 
   // Handle slashes - take first option: "coffee / espresso" → "coffee"
   if (trimmed.includes("/")) {
