@@ -286,6 +286,9 @@ function mapToParentCategory(name: string): string {
     "anchovy": "anchovies",
     "anchovy paste": "anchovies",
     "white anchovies": "anchovies",
+    // Artichokes
+    "artichoke": "artichokes",
+    "artichoke hearts": "artichokes",
     // Pepper
     "black peppercorns": "black pepper",
     "white peppercorns": "white pepper",
