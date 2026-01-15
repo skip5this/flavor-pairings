@@ -323,6 +323,9 @@ function mapToParentCategory(name: string): string {
     "lemon juice": "lemons",
     "lime juice": "limes",
     "grapefruit juice": "grapefruit",
+    // Quince
+    "quince paste": "quince",
+    "quinces": "quince",
     // Pepper
     "black peppercorns": "black pepper",
     "white peppercorns": "white pepper",
