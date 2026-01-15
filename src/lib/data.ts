@@ -583,6 +583,7 @@ const excludeIngredients = new Set([
   "calamari", "calf's liver", "citron",
   "clam juice", "coca-cola", "cola", "cold cuts",
   "truffles juice", "oyster juice",
+  "crudités", "crudites", "crème de menthe", "creme de menthe",
 ]);
 
 function shouldExclude(name: string): boolean {
