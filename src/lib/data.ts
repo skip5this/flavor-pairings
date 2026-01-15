@@ -590,6 +590,7 @@ const excludeIngredients = new Set([
   "confectioner's sugar", "granulated sugar", "light brown sugar",
   "brown sugar", "powdered sugar", "caster sugar",
   "artificial maple syrup", "yeast",
+  "curaçao", "curacao",
 ]);
 
 function shouldExclude(name: string): boolean {
