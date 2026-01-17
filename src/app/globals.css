@@ -157,17 +157,47 @@ body {
   animation-delay: -16s;
 }
 
-/* Dark mode orbs - more vibrant */
-.dark .gradient-orb-1 {
-  background: rgba(59, 130, 246, 0.35);
+/* Hide orbs in dark mode */
+.dark .gradient-orb {
+  opacity: 0;
 }
 
-.dark .gradient-orb-2 {
-  background: rgba(168, 85, 247, 0.3);
+/* Dot grid - faint base layer */
+.dot-grid {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 1;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+  transition: opacity 0.3s ease;
 }
 
-.dark .gradient-orb-3 {
-  background: rgba(34, 211, 238, 0.2);
+.dark .dot-grid {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+/* Brighter dots revealed by mouse - uses CSS mask */
+.dot-grid-glow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 1;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.25) 1px, transparent 1px);
+  background-size: 20px 20px;
+  transition: opacity 0.3s ease;
+  mask-image: radial-gradient(circle 120px at center, black 0%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle 120px at center, black 0%, transparent 100%);
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.dark .dot-grid-glow {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
 }
 
 @keyframes float {
@@ -334,6 +364,18 @@ body {
 
 .score-low {
   background: var(--score-low);
+}
+
+.text-score-high {
+  color: var(--score-high);
+}
+
+.text-score-medium {
+  color: var(--score-medium);
+}
+
+.text-score-low {
+  color: var(--score-low);
 }
 
 /* Theme toggle switch */

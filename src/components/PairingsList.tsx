@@ -178,11 +178,9 @@ export function PairingsList({
                     key={pairing.ingredient}
                     onClick={() => onPairingClick?.(pairing.ingredient)}
                     className="result-item inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm cursor-pointer"
-                    title={`${pairing.sharedMolecules} shared molecules`}
                   >
-                    <span className={`score-dot ${getScoreClass(pairing.score)}`} />
+                    <span className={`text-xs font-medium tabular-nums ${getScoreClass(pairing.score).replace('score-', 'text-score-')}`}>{formatScore(pairing.score)}</span>
                     <span className="capitalize">{pairing.ingredient}</span>
-                    <span className="text-xs text-muted">{formatScore(pairing.score)}</span>
                   </button>
                 ))}
               </div>
@@ -217,11 +215,9 @@ export function PairingsList({
                       key={pairing.ingredient}
                       onClick={() => onPairingClick?.(pairing.ingredient)}
                       className="result-item inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm cursor-pointer"
-                      title={`${pairing.sharedMolecules} shared molecules`}
                     >
-                      <span className={`score-dot ${getScoreClass(pairing.score)}`} />
+                      <span className={`text-xs font-medium tabular-nums ${getScoreClass(pairing.score).replace('score-', 'text-score-')}`}>{formatScore(pairing.score)}</span>
                       <span className="capitalize">{pairing.ingredient}</span>
-                      <span className="text-xs text-muted">{formatScore(pairing.score)}</span>
                     </button>
                   ))}
               </div>

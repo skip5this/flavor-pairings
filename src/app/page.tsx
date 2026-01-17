@@ -5,6 +5,7 @@ import { SearchInput } from "@/components/SearchInput";
 import { PairingsList } from "@/components/PairingsList";
 import { SelectedIngredients } from "@/components/SelectedIngredients";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { MouseGlow } from "@/components/MouseGlow";
 import { getCommonPairings, getIngredientCount, type Pairing } from "@/lib/data";
 
 export default function Home() {
@@ -53,6 +54,8 @@ export default function Home() {
         <div className="gradient-orb gradient-orb-3" />
       </div>
       <div className="noise-overlay" />
+      <div className="dot-grid" />
+      <MouseGlow />
 
       {/* Theme toggle */}
       <div className="fixed top-4 right-4 z-50">
