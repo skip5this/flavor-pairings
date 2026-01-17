@@ -10,7 +10,7 @@ interface SearchInputProps {
 
 export function SearchInput({
   onSelect,
-  placeholder = "Search for an ingredient...",
+  placeholder = "Search ingredients...",
 }: SearchInputProps) {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState<string[]>([]);
@@ -54,27 +54,29 @@ export function SearchInput({
 
   return (
     <div className="relative w-full">
-      <input
-        ref={inputRef}
-        type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        onKeyDown={handleKeyDown}
-        onFocus={() => setIsOpen(suggestions.length > 0)}
-        onBlur={() => setTimeout(() => setIsOpen(false), 150)}
-        placeholder={placeholder}
-        className="w-full px-5 py-4 text-lg text-foreground placeholder:text-muted bg-card border-2 border-border rounded-2xl focus:border-lavender focus:ring-2 focus:ring-lavender/30 focus:outline-none transition-colors"
-      />
+      <div className="input-glow-wrapper">
+        <input
+          ref={inputRef}
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={handleKeyDown}
+          onFocus={() => setIsOpen(suggestions.length > 0)}
+          onBlur={() => setTimeout(() => setIsOpen(false), 150)}
+          placeholder={placeholder}
+          className="input-modern w-full px-4 py-3 text-sm text-foreground placeholder:text-muted/60 rounded-lg relative z-10"
+        />
+      </div>
       {isOpen && (
-        <ul className="absolute z-10 w-full mt-2 bg-card border border-border rounded-2xl shadow-lg max-h-60 overflow-auto">
+        <ul className="dropdown-modern absolute z-10 w-full mt-2 rounded-lg max-h-64 overflow-auto">
           {suggestions.map((suggestion, index) => (
             <li
               key={suggestion}
               onClick={() => handleSelect(suggestion)}
-              className={`px-4 py-3 cursor-pointer capitalize text-foreground first:rounded-t-2xl last:rounded-b-2xl ${
+              className={`px-4 py-2.5 cursor-pointer capitalize text-sm text-foreground first:rounded-t-lg last:rounded-b-lg transition-colors ${
                 index === selectedIndex
-                  ? "bg-lavender/40"
-                  : "hover:bg-sky/30"
+                  ? "bg-accent-light text-accent-dark"
+                  : "hover:bg-muted-bg"
               }`}
             >
               {suggestion}

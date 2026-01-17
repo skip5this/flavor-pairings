@@ -1,39 +1,403 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5ebe0;
-  --foreground: #1a1a1a;
-  --card: #fffcf8;
-  --border: #e8dfd4;
-  --muted: #8a8078;
-  --muted-bg: #ddd8d0;
-  --coral: #f2a093;
-  --lavender: #c9c0e8;
-  --sky: #b5dce0;
-  --coral-dark: #e88a7a;
-  --lavender-dark: #a99cd0;
-  --sky-dark: #8fc8ce;
+  /* Modern neutral palette - Light mode */
+  --background: #fafafa;
+  --foreground: #171717;
+  --card: #ffffff;
+  --card-hover: #f5f5f5;
+  --border: rgba(0, 0, 0, 0.06);
+  --muted: #737373;
+  --muted-bg: #f5f5f5;
+
+  /* Single accent - modern blue */
+  --accent: #2563eb;
+  --accent-light: #dbeafe;
+  --accent-dark: #1d4ed8;
+
+  /* Semantic colors for scores */
+  --score-high: #22c55e;
+  --score-medium: #eab308;
+  --score-low: #a3a3a3;
+
+  /* Shadow system */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.06), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.06), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+
+  /* Inner glow for inputs */
+  --inner-highlight: rgba(255, 255, 255, 0.8);
+  --focus-ring: rgba(37, 99, 235, 0.2);
+}
+
+/* Dark mode */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --card: #171717;
+  --card-hover: #262626;
+  --border: rgba(255, 255, 255, 0.08);
+  --muted: #a3a3a3;
+  --muted-bg: #262626;
+
+  /* Accent adjustments for dark */
+  --accent: #3b82f6;
+  --accent-light: #1e3a5f;
+  --accent-dark: #93c5fd;
+
+  /* Brighter scores for dark mode */
+  --score-high: #4ade80;
+  --score-medium: #facc15;
+  --score-low: #737373;
+
+  /* Darker shadows for dark mode */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+
+  --inner-highlight: rgba(255, 255, 255, 0.05);
+  --focus-ring: rgba(59, 130, 246, 0.3);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
   --color-border: var(--border);
   --color-muted: var(--muted);
   --color-muted-bg: var(--muted-bg);
-  --color-coral: var(--coral);
-  --color-lavender: var(--lavender);
-  --color-sky: var(--sky);
-  --color-coral-dark: var(--coral-dark);
-  --color-lavender-dark: var(--lavender-dark);
-  --color-sky-dark: var(--sky-dark);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dark: var(--accent-dark);
+  --color-score-high: var(--score-high);
+  --color-score-medium: var(--score-medium);
+  --color-score-low: var(--score-low);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
+
+/* ============================================
+   BACKGROUND EFFECTS
+   ============================================ */
+
+/* Noise texture overlay - fine grain */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+.dark .noise-overlay {
+  opacity: 0.04;
+}
+
+/* Gradient mesh / orbs */
+.gradient-mesh {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  animation: float 25s ease-in-out infinite;
+}
+
+.gradient-orb-1 {
+  width: 500px;
+  height: 500px;
+  background: rgba(59, 130, 246, 0.25);
+  top: -100px;
+  right: -50px;
+  animation-delay: 0s;
+}
+
+.gradient-orb-2 {
+  width: 450px;
+  height: 450px;
+  background: rgba(168, 85, 247, 0.2);
+  bottom: -100px;
+  left: -50px;
+  animation-delay: -8s;
+}
+
+.gradient-orb-3 {
+  width: 350px;
+  height: 350px;
+  background: rgba(34, 211, 238, 0.15);
+  top: 50%;
+  left: 30%;
+  animation-delay: -16s;
+}
+
+/* Dark mode orbs - more vibrant */
+.dark .gradient-orb-1 {
+  background: rgba(59, 130, 246, 0.35);
+}
+
+.dark .gradient-orb-2 {
+  background: rgba(168, 85, 247, 0.3);
+}
+
+.dark .gradient-orb-3 {
+  background: rgba(34, 211, 238, 0.2);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(40px, -40px) scale(1.1);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.9);
+  }
+}
+
+/* ============================================
+   ANIMATED GRADIENT BORDER INPUT (Jhey style)
+   ============================================ */
+
+.input-glow-wrapper {
+  position: relative;
+  border-radius: 10px;
+  isolation: isolate;
+}
+
+/* Animated gradient glow behind input */
+.input-glow-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    #3b82f6,
+    #8b5cf6,
+    #06b6d4,
+    #3b82f6
+  );
+  background-size: 300% 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  animation: gradient-shift 8s linear infinite;
+  z-index: -2;
+  filter: blur(6px);
+}
+
+.input-glow-wrapper:focus-within::before {
+  opacity: 0.4;
+}
+
+/* Solid background to mask the glow */
+.input-glow-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  background: var(--card);
+  z-index: -1;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+/* Dark mode - slightly brighter glow */
+.dark .input-glow-wrapper:focus-within::before {
+  opacity: 0.5;
+}
+
+/* Modern input style */
+.input-modern {
+  background: var(--card);
+  box-shadow:
+    var(--shadow-sm),
+    inset 0 1px 0 0 var(--inner-highlight);
+  border: 1px solid var(--border);
+  transition: all 0.15s ease;
+}
+
+.input-modern:hover {
+  box-shadow:
+    var(--shadow-md),
+    inset 0 1px 0 0 var(--inner-highlight);
+}
+
+.input-modern:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 3px var(--focus-ring),
+    var(--shadow-md),
+    inset 0 1px 0 0 var(--inner-highlight);
+}
+
+/* Card with depth */
+.card-elevated {
+  background: var(--card);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Dropdown */
+.dropdown-modern {
+  background: var(--card);
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border);
+}
+
+/* Chip/tag style */
+.chip {
+  background: var(--muted-bg);
+  color: var(--foreground);
+  transition: all 0.15s ease;
+}
+
+.chip:hover {
+  background: var(--card-hover);
+}
+
+.chip-accent {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  transition: all 0.15s ease;
+}
+
+.chip-accent:hover {
+  opacity: 0.85;
+}
+
+/* Result item */
+.result-item {
+  background: var(--muted-bg);
+  transition: all 0.15s ease;
+}
+
+.result-item:hover {
+  background: var(--card-hover);
+  transform: translateY(-1px);
+}
+
+.result-item:active {
+  transform: translateY(0);
+}
+
+/* Score indicators */
+.score-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.score-high {
+  background: var(--score-high);
+}
+
+.score-medium {
+  background: var(--score-medium);
+}
+
+.score-low {
+  background: var(--score-low);
+}
+
+/* Theme toggle switch */
+.theme-toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: var(--muted-bg);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: 1px solid var(--border);
+}
+
+.theme-toggle:hover {
+  background: var(--card-hover);
+}
+
+.theme-toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  background: var(--card);
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark .theme-toggle-thumb {
+  transform: translateX(20px);
+}
+
+/* Subtle fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+/* Stagger children animations */
+.stagger-children > * {
+  opacity: 0;
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 30ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 60ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 90ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 120ms; }
+.stagger-children > *:nth-child(6) { animation-delay: 150ms; }
+.stagger-children > *:nth-child(7) { animation-delay: 180ms; }
+.stagger-children > *:nth-child(8) { animation-delay: 210ms; }

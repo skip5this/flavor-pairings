@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { SearchInput } from "@/components/SearchInput";
 import { PairingsList } from "@/components/PairingsList";
 import { SelectedIngredients } from "@/components/SelectedIngredients";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { getCommonPairings, getIngredientCount, type Pairing } from "@/lib/data";
 
 export default function Home() {
@@ -15,7 +16,6 @@ export default function Home() {
   );
 
   const addIngredient = (ingredient: string) => {
-    // Don't add if already selected
     if (selectedIngredients.some(
       (i) => i.toLowerCase() === ingredient.toLowerCase()
     )) {
@@ -35,7 +35,6 @@ export default function Home() {
   };
 
   const handlePairingClick = (pairing: string) => {
-    // If pairing is already selected, remove it; otherwise add it
     if (selectedIngredients.some(
       (i) => i.toLowerCase() === pairing.toLowerCase()
     )) {
@@ -47,46 +46,41 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background relative">
-      {/* Background image with fade */}
-      <div
-        className="absolute inset-0 bg-[url('/bg-image2.png')] bg-no-repeat bg-center bg-contain opacity-60 pointer-events-none"
-        style={{
-          maskImage: 'radial-gradient(ellipse 70% 60% at center, black 20%, transparent 70%)',
-          WebkitMaskImage: 'radial-gradient(ellipse 70% 60% at center, black 20%, transparent 70%)',
-        }}
-      />
-      {/* Top edge fade overlay - mobile and tablet only */}
-      <div
-        className="absolute inset-0 pointer-events-none lg:hidden"
-        style={{
-          background: 'linear-gradient(to bottom, var(--background) 0%, var(--background) 15%, transparent 35%)',
-        }}
-      />
-      <div className="relative max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 pt-12 pb-8 lg:pt-32 lg:pb-12">
+      {/* Background effects */}
+      <div className="gradient-mesh">
+        <div className="gradient-orb gradient-orb-1" />
+        <div className="gradient-orb gradient-orb-2" />
+        <div className="gradient-orb gradient-orb-3" />
+      </div>
+      <div className="noise-overlay" />
+
+      {/* Theme toggle */}
+      <div className="fixed top-4 right-4 z-50">
+        <ThemeToggle />
+      </div>
+
+      <div className="relative z-10 max-w-xl mx-auto px-5 py-16 sm:py-24">
         {/* Header */}
-        <header className="mb-8 lg:mb-12 text-center">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-3 font-[family-name:var(--font-display)] uppercase tracking-[0.2em] drop-shadow-[0_1px_2px_rgba(255,255,255,0.8)]">
+        <header className="mb-12 text-center">
+          <h1 className="text-2xl sm:text-3xl font-semibold text-foreground tracking-tight mb-2">
             Flavor Pairings
           </h1>
-          <p className="text-muted text-lg drop-shadow-[0_1px_1px_rgba(255,255,255,0.6)]">
-            Discover what ingredients work well together
-          </p>
-          <p className="text-sm text-muted/70 mt-1 drop-shadow-[0_1px_1px_rgba(255,255,255,0.5)]">
-            {getIngredientCount()} ingredients
+          <p className="text-muted text-sm">
+            {getIngredientCount()} ingredients to explore
           </p>
         </header>
 
         {/* Search */}
-        <div className="mb-6">
+        <div className="mb-8">
           <SearchInput
             onSelect={addIngredient}
-            placeholder="Search for an ingredient..."
+            placeholder="Search ingredients..."
           />
         </div>
 
         {/* Selected Ingredients */}
         {selectedIngredients.length > 0 && (
-          <div className="mb-6">
+          <div className="mb-6 animate-fade-in">
             <SelectedIngredients
               ingredients={selectedIngredients}
               onRemove={removeIngredient}
@@ -97,7 +91,7 @@ export default function Home() {
 
         {/* Results */}
         {selectedIngredients.length > 0 && (
-          <div className="bg-card rounded-2xl p-6 sm:p-8 shadow-sm border border-border">
+          <div className="card-elevated rounded-xl p-5 animate-fade-in">
             {pairings.length > 0 ? (
               <PairingsList
                 ingredients={selectedIngredients}
@@ -105,10 +99,17 @@ export default function Home() {
                 onPairingClick={handlePairingClick}
               />
             ) : (
-              <div className="text-center py-8 text-muted">
-                No common pairings found for these ingredients
+              <div className="text-center py-12 text-muted text-sm">
+                No common pairings found
               </div>
             )}
+          </div>
+        )}
+
+        {/* Empty state hint */}
+        {selectedIngredients.length === 0 && (
+          <div className="text-center text-muted text-sm mt-16">
+            <p>Start by searching for an ingredient above</p>
           </div>
         )}
       </div>
